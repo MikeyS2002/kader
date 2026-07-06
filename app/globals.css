@@ -1,0 +1,128 @@
+/* Kader — brand identity v1
+ *
+ * Opgezet naar het vast-design-system patroon: kleine tokenbestanden
+ * in styles/, hier samengevoegd. Volgorde: tokens → varianten → thema's
+ * → typescale → helpers.
+ */
+
+@import "tailwindcss";
+
+@import "../styles/colors.css";
+@import "../styles/spacing.css";
+@import "../styles/variants.css";
+@import "../styles/themes.css";
+@import "../styles/typography.css";
+@import "../styles/utilities.css";
+
+@theme inline {
+  /* Font-variabelen komen uit next/font (app/layout.js) */
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+/* ---------- Basis: kale elementen spreken automatisch de typescale ---------- */
+@layer base {
+  body {
+    font-family: var(--font-sans), sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1 {
+    @apply type-h1;
+  }
+  h2 {
+    @apply type-h2;
+  }
+  h3 {
+    @apply type-h3;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-sans), sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  h4 {
+    font-size: 1.125rem;
+  }
+  h5 {
+    font-size: 1.0625rem;
+  }
+  h6 {
+    font-size: 0.9375rem;
+  }
+
+  p {
+    max-width: 68ch;
+  }
+
+  /* Meetgegevens & kleine lettertjes spreken de mono-stem */
+  small {
+    @apply type-caption;
+  }
+
+  a {
+    color: var(--color-highlight);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  strong,
+  b {
+    font-weight: 600;
+  }
+
+  ::selection {
+    background: var(--color-chroma);
+    color: var(--color-flag);
+  }
+}
+
+/* ---------- Kaart-overlays ---------- */
+@keyframes kader-card-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.kader-card-in {
+  animation: kader-card-in 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Menu-entree: alleen bij openen (animation, geen transition) — bij
+   sluiten beweegt er niets en fadet alleen de overlay. */
+@keyframes kader-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes kader-drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

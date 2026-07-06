@@ -1,0 +1,31 @@
+/* Kader spacing — semantische schaal naast de numerieke Tailwind-schaal.
+ *
+ * Zelfde gebruik als elke spacing-utility: gap-s, p-l, py-3xl, mt-2xl …
+ * De numerieke schaal (p-4, gap-6) blijft gewoon werken.
+ *
+ * | Token | rem   | px  | gebruik                        |
+ * |-------|-------|-----|--------------------------------|
+ * | 3xs   | 0.25  | 4   | micro                          |
+ * | 2xs   | 0.5   | 8   | binnen een component           |
+ * | xs    | 0.75  | 12  | knop-padding, kleine gaps      |
+ * | s     | 1     | 16  | standaard gap                  |
+ * | m     | 1.25  | 20  | card-padding                   |
+ * | l     | 2     | 32  | grote card-padding             |
+ * | xl    | 2.5   | 40  | blok-afstand                   |
+ * | 2xl   | 4     | 64  | sectie-afstand mobiel          |
+ * | 3xl   | 5.5   | 88  | sectie-afstand desktop         |
+ * | 4xl   | 7     | 112 | hero-afstand                   |
+ */
+
+@theme static {
+  --spacing-3xs: 0.25rem;
+  --spacing-2xs: 0.5rem;
+  --spacing-xs: 0.75rem;
+  --spacing-s: 1rem;
+  --spacing-m: 1.25rem;
+  --spacing-l: 2rem;
+  --spacing-xl: 2.5rem;
+  --spacing-2xl: 4rem;
+  --spacing-3xl: 5.5rem;
+  --spacing-4xl: 7rem;
+}

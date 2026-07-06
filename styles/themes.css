@@ -1,0 +1,60 @@
+/* Themed Surfaces
+ *
+ * Zet data-theme op een element; alles daarbinnen erft de semantische tokens.
+ * Gebruik bg-background / text-foreground / text-highlight als defaults —
+ * een component kleurt dan automatisch mee op elke ondergrond.
+ *
+ * <div data-theme="flag" class="bg-background text-foreground">…</div>
+ */
+
+:root {
+  --color-background: var(--color-cyc);
+  --color-foreground: var(--color-flag);
+  --color-highlight: var(--color-chroma);
+}
+
+[data-theme="cyc"] {
+  --color-background: var(--color-cyc);
+  --color-foreground: var(--color-flag);
+  --color-highlight: var(--color-chroma);
+}
+
+[data-theme="white"] {
+  --color-background: #ffffff;
+  --color-foreground: var(--color-flag);
+  --color-highlight: var(--color-chroma);
+}
+
+[data-theme="papier"] {
+  --color-background: var(--color-papier);
+  --color-foreground: var(--color-flag);
+  --color-highlight: var(--color-gel);
+}
+
+[data-theme="flag"] {
+  --color-background: var(--color-flag);
+  --color-foreground: var(--color-cyc);
+  --color-highlight: var(--color-chroma);
+}
+
+[data-theme="chroma"] {
+  --color-background: var(--color-chroma);
+  --color-foreground: var(--color-flag);
+  --color-highlight: var(--color-cyc);
+}
+
+@utility bg-background {
+  background-color: var(--color-background);
+}
+
+@utility text-foreground {
+  color: var(--color-foreground);
+}
+
+@utility text-highlight {
+  color: var(--color-highlight);
+}
+
+@utility border-foreground {
+  border-color: var(--color-foreground);
+}

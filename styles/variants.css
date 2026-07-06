@@ -1,0 +1,13 @@
+/* Pointer-detectie varianten: pointer:hover-effect alleen op muis-apparaten */
+@custom-variant pointer (@media (hover: hover) and (pointer: fine));
+@custom-variant touch (@media (hover: none) and (pointer: coarse));
+
+/* Themed surfaces — zie themes.css voor de tokens.
+ * theme-*: varianten voor incidentele overrides binnen een thema.
+ * Voorbeeld: <span class="text-flag theme-flag:text-cyc">
+ */
+@custom-variant theme-cyc (&:where([data-theme=cyc], [data-theme=cyc] *));
+@custom-variant theme-flag (&:where([data-theme=flag], [data-theme=flag] *));
+@custom-variant theme-chroma (&:where([data-theme=chroma], [data-theme=chroma] *));
+@custom-variant theme-papier (&:where([data-theme=papier], [data-theme=papier] *));
+@custom-variant theme-white (&:where([data-theme=white], [data-theme=white] *));

@@ -1,0 +1,24 @@
+/* Kader kleurpalet — brand identity v1
+ *
+ * Palet van de studiovloer:
+ * | Token   | Hex       | Rol                                  |
+ * |---------|-----------|--------------------------------------|
+ * | cyc     | #EDEDEA   | achtergrond, rust, ruimte            |
+ * | flag    | #171716   | tekst, contrast, gewicht             |
+ * | chroma  | #00B140   | knoppen, links, focus — spaarzaam    |
+ * | gel     | #2F4DE0   | datavisualisatie, badges video       |
+ * | papier  | #D8CBB8   | zachte vlakken, placeholders         |
+ * | line    | flag/14%  | hairline randen                      |
+ *
+ * Regel: Chroma is de enige kleur die om aandacht mag vragen,
+ * en maximaal één keer per scherm.
+ */
+
+@theme static {
+  --color-cyc: #ededea;
+  --color-flag: #171716;
+  --color-chroma: #00b140;
+  --color-gel: #2f4de0;
+  --color-papier: #d8cbb8;
+  --color-line: rgba(23, 23, 22, 0.14);
+}
