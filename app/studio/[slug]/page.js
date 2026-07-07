@@ -3,13 +3,20 @@ import { notFound } from "next/navigation";
 
 import { Badge } from "@/components/badge";
 import { Button } from "@/components/button";
+import {
+  BADGE_VARIANTS,
+  eur,
+  getStudioBySlug,
+  specsList,
+  studios,
+  TYPE_LABELS,
+  TYPE_NOUNS,
+  TYPE_URL_PREFIX,
+} from "@/lib/studios";
 import { Typography } from "@/components/typography";
-import { eur, getStudioBySlug, specsList, studios, TYPE_LABELS } from "@/lib/studios";
 
 /* Studio-detailpagina — statisch gegenereerd per studio uit data/studios.json.
  * Boeken gebeurt (voorlopig) extern via Gearbooker. */
-
-const BADGE_VARIANT = { foto: "flag", podcast: "gel", muziek: "papier" };
 
 export function generateStaticParams() {
   return studios.map((s) => ({ slug: s.slug }));
@@ -20,9 +27,15 @@ export async function generateMetadata({ params }) {
   const studio = getStudioBySlug(slug);
   if (!studio) return {};
   const specs = specsList(studio.specs).join(" · ");
+  const price = studio.prices.hourEUR
+    ? ` Vanaf ${eur(studio.prices.hourEUR)}/uur.`
+    : studio.prices.firstDayEUR
+      ? ` Vanaf ${eur(studio.prices.firstDayEUR)}/dag.`
+      : "";
   return {
-    title: `${studio.name} — Kader`,
-    description: `${TYPE_LABELS[studio.type] ?? "Studio"}studio huren in ${studio.city}.${specs ? ` ${specs}.` : ""}`,
+    title: studio.name,
+    description: `${TYPE_NOUNS[studio.type] ?? "Studio"} huren in ${studio.city}.${specs ? ` ${specs}.` : ""}${price}`,
+    alternates: { canonical: `/studio/${studio.slug}` },
   };
 }
 
@@ -38,9 +51,62 @@ export default async function StudioPage({ params }) {
     ["per week", studio.prices.weekEUR],
   ].filter(([, v]) => v);
   const specs = specsList(studio.specs);
+  const cityPage = studio.citySlug
+    ? `/${TYPE_URL_PREFIX[studio.type]}-${studio.citySlug}`
+    : null;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Product",
+        name: studio.name,
+        image: studio.image || undefined,
+        description: studio.description || undefined,
+        url: `https://kader-rho.vercel.app/studio/${studio.slug}`,
+        offers: {
+          "@type": "Offer",
+          price: String(studio.prices.hourEUR ?? studio.prices.firstDayEUR ?? ""),
+          priceCurrency: "EUR",
+          availability: "https://schema.org/InStock",
+          url: studio.url,
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Kader",
+            item: "https://kader-rho.vercel.app/",
+          },
+          ...(cityPage
+            ? [
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: `${TYPE_NOUNS[studio.type]} huren in ${studio.city}`,
+                  item: `https://kader-rho.vercel.app${cityPage}`,
+                },
+              ]
+            : []),
+          {
+            "@type": "ListItem",
+            position: cityPage ? 3 : 2,
+            name: studio.name,
+          },
+        ],
+      },
+    ],
+  };
 
   return (
     <main className="mx-auto w-full max-w-[1080px] px-6 pb-24 pt-24 sm:px-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Link
         href={`/?studio=${studio.id}`}
         className="font-mono text-xs uppercase tracking-[0.12em] !text-flag opacity-55 hover:opacity-100"
@@ -77,7 +143,7 @@ export default async function StudioPage({ params }) {
         {/* Info + prijzen */}
         <div>
           <div className="flex items-center gap-3">
-            <Badge variant={BADGE_VARIANT[studio.type] ?? "flag"}>
+            <Badge variant={BADGE_VARIANTS[studio.type] ?? "flag"}>
               {TYPE_LABELS[studio.type] ?? studio.type}
             </Badge>
             <Typography type="caption" className="opacity-60">
@@ -135,7 +201,7 @@ export default async function StudioPage({ params }) {
                 as="a"
                 href={studio.url}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
               />
               <Button
                 variant="ghost"
@@ -149,6 +215,14 @@ export default async function StudioPage({ params }) {
               via gearbooker.com · prijzen kunnen daar afwijken
             </Typography>
           </div>
+
+          {cityPage ? (
+            <p className="mt-6">
+              <Link href={cityPage} className="text-[15px] font-medium">
+                {`Meer ${TYPE_NOUNS[studio.type].toLowerCase()}'s in ${studio.city} →`}
+              </Link>
+            </p>
+          ) : null}
         </div>
       </div>
     </main>

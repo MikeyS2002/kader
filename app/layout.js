@@ -30,9 +30,47 @@ const splineMono = Spline_Sans_Mono({
 });
 
 export const metadata = {
-  title: "Kader — elke studio in beeld",
+  metadataBase: new URL("https://kader-rho.vercel.app"),
+  title: {
+    default: "Kader — elke studio in beeld",
+    template: "%s — Kader",
+  },
   description:
     "Kader is de plek waar makers hun volgende studio vinden: foto, video en podcast, op één kaart, zonder gedoe.",
+  applicationName: "Kader",
+  openGraph: {
+    siteName: "Kader",
+    locale: "nl_NL",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+const SITE_JSON_LD = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://kader-rho.vercel.app/#organization",
+      name: "Kader",
+      url: "https://kader-rho.vercel.app",
+      logo: "https://kader-rho.vercel.app/icon",
+      slogan: "elke studio in beeld",
+    },
+    {
+      "@type": "WebSite",
+      name: "Kader",
+      url: "https://kader-rho.vercel.app",
+      inLanguage: "nl",
+      publisher: { "@id": "https://kader-rho.vercel.app/#organization" },
+    },
+  ],
 };
 
 export default function RootLayout({ children }) {
@@ -45,6 +83,10 @@ export default function RootLayout({ children }) {
         {children}
         <Menu />
         <GridOverlay />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(SITE_JSON_LD) }}
+        />
       </body>
     </html>
   );

@@ -12,9 +12,11 @@ const COLORS = [
 ];
 
 export const metadata = {
-  title: "Brand — Kader",
+  title: "Brand",
   description:
     "Kader brand identity v1: naam, logo, kleur, typografie en tone of voice.",
+  alternates: { canonical: "/brand" },
+  robots: { index: false, follow: true },
 };
 
 export default function BrandPage() {

@@ -6,19 +6,13 @@ import { useEffect, useState } from "react";
  *
  * ⌘G (of Ctrl+G) toggle't een kolommen-overlay over de pagina:
  * 4 kolommen mobiel, 12 vanaf md. Zelfde container als de pagina
- * (max-w 1440px, px-6 sm:px-10). Stand wordt onthouden in localStorage.
+ * (max-w 1440px, px-6 sm:px-10).
  */
-
-const STORAGE_KEY = "kader:grid";
 
 export function GridOverlay() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    try {
-      if (localStorage.getItem(STORAGE_KEY) === "1") setVisible(true);
-    } catch {}
-
     const onKey = (e) => {
       if (
         (e.metaKey || e.ctrlKey) &&
@@ -27,13 +21,7 @@ export function GridOverlay() {
         e.key.toLowerCase() === "g"
       ) {
         e.preventDefault();
-        setVisible((v) => {
-          const next = !v;
-          try {
-            localStorage.setItem(STORAGE_KEY, next ? "1" : "0");
-          } catch {}
-          return next;
-        });
+        setVisible((v) => !v);
       }
     };
 
