@@ -31,6 +31,16 @@ export function Menu() {
   };
   const closeMenu = () => setOpen(false);
 
+  /* Pas sluiten als de route écht gewisseld is — bij sluiten op de klik
+   * zie je de oude pagina nog even onder de fade voordat de nieuwe laadt.
+   * (state-adjustment tijdens render, zie react.dev "adjusting state when
+   * a prop changes") */
+  const [lastPath, setLastPath] = useState(pathname);
+  if (lastPath !== pathname) {
+    setLastPath(pathname);
+    if (open) setOpen(false);
+  }
+
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === "Escape") setOpen(false);
@@ -83,7 +93,10 @@ export function Menu() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  onClick={closeMenu}
+                  onClick={() => {
+                    // zelfde pagina: geen routewissel, dus direct sluiten
+                    if (item.href === pathname) closeMenu();
+                  }}
                   tabIndex={open ? 0 : -1}
                   className="focusable group font-display text-[clamp(56px,10vw,110px)] font-extrabold lowercase leading-none tracking-[-0.04em] text-flag no-underline hover:no-underline"
                   style={{

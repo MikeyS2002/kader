@@ -2,10 +2,11 @@
 
 import clsx from "clsx";
 import maplibregl from "maplibre-gl";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 import { Typography } from "@/components/typography";
-import studiosData from "@/data/studios.json";
+import { studios } from "@/lib/studios";
 
 import "maplibre-gl/dist/maplibre-gl.css";
 
@@ -75,11 +76,12 @@ function priceTiers(prices) {
 
 /* Gescrapete studio's (scripts/scrape-studios.mjs) → GeoJSON features.
  * Alleen platte props: geneste objecten worden door MapLibre gestringifyd. */
-const STUDIO_FEATURES = studiosData.studios.map((s) => ({
+const STUDIO_FEATURES = studios.map((s) => ({
   type: "Feature",
   geometry: { type: "Point", coordinates: [s.lng, s.lat] },
   properties: {
     id: s.id,
+    slug: s.slug,
     kind: "studio",
     name: s.name,
     city: s.city ?? "",
@@ -443,6 +445,16 @@ export function StudioMap() {
       });
 
       applyMapTheme(map, MAP_THEME);
+
+      // deep link vanaf een detailpagina: /?studio=<id> → focus + kaart open
+      const focusId = new URLSearchParams(window.location.search).get("studio");
+      if (focusId) {
+        const f = STUDIO_FEATURES.find((x) => x.properties.id === focusId);
+        if (f) {
+          map.jumpTo({ center: f.geometry.coordinates, zoom: 14 });
+          setCard({ ...f.properties, coords: f.geometry.coordinates.slice() });
+        }
+      }
     });
 
     map.on("sourcedata", (e) => {
@@ -591,14 +603,12 @@ export function StudioMap() {
                 ) : (
                   <span />
                 )}
-                <a
-                  href={card.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href={`/studio/${card.slug}`}
                   className="whitespace-nowrap text-[13px] font-semibold text-chroma"
                 >
-                  Bekijk →
-                </a>
+                  Bekijk studio →
+                </Link>
               </div>
               {card.priceTiers ? (
                 <Typography type="caption" as="p" className="mt-1.5 opacity-60">

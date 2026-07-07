@@ -1,0 +1,156 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+
+import { Badge } from "@/components/badge";
+import { Button } from "@/components/button";
+import { Typography } from "@/components/typography";
+import { eur, getStudioBySlug, specsList, studios, TYPE_LABELS } from "@/lib/studios";
+
+/* Studio-detailpagina — statisch gegenereerd per studio uit data/studios.json.
+ * Boeken gebeurt (voorlopig) extern via Gearbooker. */
+
+const BADGE_VARIANT = { foto: "flag", podcast: "gel", muziek: "papier" };
+
+export function generateStaticParams() {
+  return studios.map((s) => ({ slug: s.slug }));
+}
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const studio = getStudioBySlug(slug);
+  if (!studio) return {};
+  const specs = specsList(studio.specs).join(" · ");
+  return {
+    title: `${studio.name} — Kader`,
+    description: `${TYPE_LABELS[studio.type] ?? "Studio"}studio huren in ${studio.city}.${specs ? ` ${specs}.` : ""}`,
+  };
+}
+
+export default async function StudioPage({ params }) {
+  const { slug } = await params;
+  const studio = getStudioBySlug(slug);
+  if (!studio) notFound();
+
+  const priceRows = [
+    ["per uur", studio.prices.hourEUR],
+    ["eerste dag", studio.prices.firstDayEUR],
+    ["extra dag", studio.prices.extraDayEUR],
+    ["per week", studio.prices.weekEUR],
+  ].filter(([, v]) => v);
+  const specs = specsList(studio.specs);
+
+  return (
+    <main className="mx-auto w-full max-w-[1080px] px-6 pb-24 pt-24 sm:px-10">
+      <Link
+        href={`/?studio=${studio.id}`}
+        className="font-mono text-xs uppercase tracking-[0.12em] !text-flag opacity-55 hover:opacity-100"
+      >
+        ← alle studio&apos;s op de kaart
+      </Link>
+
+      <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-[1.2fr_1fr] lg:gap-14">
+        {/* Beeld + beschrijving */}
+        <div>
+          <div className="cyc-shape overflow-hidden border border-line bg-papier">
+            {studio.image ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={studio.image}
+                alt={studio.name}
+                className="h-[280px] w-full object-cover sm:h-[420px]"
+              />
+            ) : (
+              <div className="flex-center h-[280px] sm:h-[420px]">
+                <Typography type="caption" className="opacity-50">
+                  geen beeld beschikbaar
+                </Typography>
+              </div>
+            )}
+          </div>
+          {studio.description ? (
+            <p className="mt-6 max-w-[62ch] text-[15px] opacity-80">
+              {studio.description}
+            </p>
+          ) : null}
+        </div>
+
+        {/* Info + prijzen */}
+        <div>
+          <div className="flex items-center gap-3">
+            <Badge variant={BADGE_VARIANT[studio.type] ?? "flag"}>
+              {TYPE_LABELS[studio.type] ?? studio.type}
+            </Badge>
+            <Typography type="caption" className="opacity-60">
+              {studio.city}
+            </Typography>
+            {studio.rating ? (
+              <Typography type="caption" className="opacity-60">
+                {`· beoordeling ${String(studio.rating).replace(".", ",")}`}
+              </Typography>
+            ) : null}
+          </div>
+
+          <h1 className="type-h2 mt-4">{studio.name}</h1>
+
+          {specs.length ? (
+            <div className="mt-5 flex flex-wrap gap-2">
+              {specs.map((s) => (
+                <span
+                  key={s}
+                  className="rounded-full border border-line bg-white px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.08em]"
+                >
+                  {s}
+                </span>
+              ))}
+            </div>
+          ) : null}
+
+          <div
+            data-theme="white"
+            className="cyc-shape-s mt-7 border border-line bg-background p-6"
+          >
+            <Typography type="label" as="div" className="opacity-50">
+              Huurprijzen
+            </Typography>
+            <div className="mt-2">
+              {priceRows.map(([label, value]) => (
+                <div
+                  key={label}
+                  className="flex items-baseline justify-between border-t border-dashed border-line py-2.5 first:border-t-0"
+                >
+                  <Typography type="caption" className="opacity-70">
+                    {label}
+                  </Typography>
+                  <Typography type="spec" className="font-medium">
+                    {eur(value)}
+                  </Typography>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-5 flex flex-wrap gap-2.5">
+              <Button
+                variant="primary"
+                label="Boek via Gearbooker"
+                as="a"
+                href={studio.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              />
+              <Button
+                variant="ghost"
+                label="Toon op kaart"
+                as={Link}
+                href={`/?studio=${studio.id}`}
+              />
+            </div>
+
+            <Typography type="caption" as="p" className="mt-4 opacity-40">
+              via gearbooker.com · prijzen kunnen daar afwijken
+            </Typography>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
