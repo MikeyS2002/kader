@@ -213,15 +213,44 @@ function parseJsonLd(html) {
   ];
   for (const [, raw] of blocks) {
     try {
-      // letterlijke control-chars in strings maken JSON.parse kapot
-      const clean = raw.replace(/[\u0000-\u001f]+/g, " ");
-      const data = JSON.parse(clean);
+      const data = JSON.parse(sanitizeJson(raw));
       if (data["@type"] === "Product") return data;
     } catch {
       /* volgende blok proberen */
     }
   }
   return null;
+}
+
+/* Letterlijke control-chars in strings maken JSON.parse kapot. Newlines
+ * escapen we (alinea's blijven behouden), de rest wordt een spatie.
+ * Buiten strings blijft whitespace ongemoeid - daar is het geldige JSON. */
+function sanitizeJson(raw) {
+  let out = "";
+  let inString = false;
+  for (let i = 0; i < raw.length; i++) {
+    const c = raw[i];
+    if (inString) {
+      if (c === "\\") {
+        out += c + (raw[++i] ?? "");
+        continue;
+      }
+      if (c === '"') {
+        inString = false;
+        out += c;
+        continue;
+      }
+      if (c.charCodeAt(0) < 0x20) {
+        out += c === "\n" ? "\\n" : " ";
+        continue;
+      }
+      out += c;
+    } else {
+      if (c === '"') inString = true;
+      out += c;
+    }
+  }
+  return out;
 }
 
 /* Specs uit naam + beschrijving halen (Nederlandse teksten). */
@@ -337,15 +366,20 @@ async function scrapeListing(url, type) {
   if (!ld) return null;
 
   const name = decodeEntities(ld.name).replace(/\s+/g, " ").trim();
+  // volledige beschrijving, met alinea's intact — voor detailpagina's/SEO
   const description = decodeEntities(ld.description ?? "")
     .replace(/^Rent and try gear before you buy\.\s*/i, "")
-    .replace(/\s+/g, " ")
+    .replace(/\r/g, "")
+    .replace(/[ \t]+/g, " ")
+    .replace(/ ?\n ?/g, "\n")
+    .replace(/\n{3,}/g, "\n\n")
     .trim();
   const city = cityFromSlug(url);
   const id = url.match(/-(\d+)-l$/)?.[1] ?? url;
 
   return {
     id: `gb-${id}`,
+    slug: `${slugifyName(name)}-gb-${id}`,
     name,
     type,
     city: city?.name ?? null,
@@ -356,11 +390,25 @@ async function scrapeListing(url, type) {
     rating: ld.aggregateRating?.ratingValue
       ? Number(ld.aggregateRating.ratingValue)
       : null,
+    reviewCount: ld.aggregateRating?.reviewCount
+      ? Number(ld.aggregateRating.reviewCount)
+      : null,
     specs: parseSpecs(`${name} ${description}`),
-    description:
-      description.length > 280 ? `${description.slice(0, 277)}…` : description,
+    description,
     source: "gearbooker",
   };
+}
+
+/* Zelfde slug-logica als voorheen in lib/studios.js — nu bij de bron. */
+function slugifyName(s) {
+  return s
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 60)
+    .replace(/-+$/, "");
 }
 
 async function main() {
@@ -453,6 +501,32 @@ async function main() {
       null,
       2
     )
+  );
+
+  /* Slanke variant voor de kaart (client-bundle): zonder volledige
+   * beschrijvingen — alleen wat de kaart-UI nodig heeft. */
+  await writeFile(
+    path.join(OUT_DIR, "studios.map.json"),
+    JSON.stringify({
+      generatedAt: new Date().toISOString(),
+      studios: withCoords.map((s) => ({
+        id: s.id,
+        slug: s.slug,
+        name: s.name,
+        type: s.type,
+        city: s.city,
+        lng: s.lng,
+        lat: s.lat,
+        url: s.url,
+        image: s.image,
+        prices: s.prices,
+        specs: s.specs,
+        desc:
+          s.description.length > 220
+            ? `${s.description.slice(0, 217).replace(/\n+/g, " ")}…`
+            : s.description.replace(/\n+/g, " "),
+      })),
+    })
   );
 
   const perType = {};

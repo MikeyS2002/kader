@@ -71,6 +71,15 @@ export default async function StudioPage({ params }) {
           availability: "https://schema.org/InStock",
           url: studio.url,
         },
+        ...(studio.rating && studio.reviewCount
+          ? {
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: studio.rating,
+                reviewCount: studio.reviewCount,
+              },
+            }
+          : {}),
       },
       {
         "@type": "BreadcrumbList",
@@ -133,11 +142,16 @@ export default async function StudioPage({ params }) {
               </div>
             )}
           </div>
-          {studio.description ? (
-            <p className="mt-6 max-w-[62ch] text-[15px] opacity-80">
-              {studio.description}
-            </p>
-          ) : null}
+          {studio.description
+            ? studio.description.split(/\n+/).map((paragraph, i) => (
+                <p
+                  key={i}
+                  className={`max-w-[62ch] text-[15px] opacity-80 ${i === 0 ? "mt-6" : "mt-3"}`}
+                >
+                  {paragraph}
+                </p>
+              ))
+            : null}
         </div>
 
         {/* Info + prijzen */}
@@ -151,7 +165,7 @@ export default async function StudioPage({ params }) {
             </Typography>
             {studio.rating ? (
               <Typography type="caption" className="opacity-60">
-                {`· beoordeling ${String(studio.rating).replace(".", ",")}`}
+                {`· beoordeling ${String(studio.rating).replace(".", ",")}${studio.reviewCount ? ` (${studio.reviewCount})` : ""}`}
               </Typography>
             ) : null}
           </div>

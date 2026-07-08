@@ -1,3 +1,6 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
+
 import { ImageResponse } from "next/og";
 
 import { studios } from "@/lib/studios";
@@ -8,7 +11,10 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export const alt = "Kader — elke studio in beeld";
 
-export default function OgImage() {
+export default async function OgImage() {
+  const bricolage = await readFile(
+    join(process.cwd(), "assets/fonts/BricolageGrotesque-800.ttf")
+  );
   return new ImageResponse(
     (
       <div
@@ -38,6 +44,7 @@ export default function OgImage() {
             style={{
               fontSize: 190,
               fontWeight: 800,
+              fontFamily: "Bricolage",
               letterSpacing: "-0.05em",
               lineHeight: 0.9,
             }}
@@ -57,6 +64,11 @@ export default function OgImage() {
         </div>
       </div>
     ),
-    size
+    {
+      ...size,
+      fonts: [
+        { name: "Bricolage", data: bricolage, weight: 800, style: "normal" },
+      ],
+    }
   );
 }

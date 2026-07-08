@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 import { Typography } from "@/components/typography";
-import { studios } from "@/lib/studios";
+import mapData from "@/data/studios.map.json";
 
 import "maplibre-gl/dist/maplibre-gl.css";
 
@@ -76,7 +76,7 @@ function priceTiers(prices) {
 
 /* Gescrapete studio's (scripts/scrape-studios.mjs) → GeoJSON features.
  * Alleen platte props: geneste objecten worden door MapLibre gestringifyd. */
-const STUDIO_FEATURES = studios.map((s) => ({
+const STUDIO_FEATURES = mapData.studios.map((s) => ({
   type: "Feature",
   geometry: { type: "Point", coordinates: [s.lng, s.lat] },
   properties: {
@@ -91,7 +91,7 @@ const STUDIO_FEATURES = studios.map((s) => ({
     priceSort: s.prices.hourEUR ?? s.prices.firstDayEUR ?? 0,
     url: s.url,
     image: s.image ?? "",
-    description: s.description ?? "",
+    description: s.desc ?? "",
     specsLine: specsLine(s.specs),
     // booleans voor de filterchips
     cyclorama: !!s.specs.cyclorama,

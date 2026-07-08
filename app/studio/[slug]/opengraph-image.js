@@ -1,3 +1,6 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
+
 import { ImageResponse } from "next/og";
 
 import { eur, getStudioBySlug, specsList, studios, TYPE_NOUNS } from "@/lib/studios";
@@ -28,6 +31,9 @@ export default async function OgImage({ params }) {
     : studio.prices.firstDayEUR
       ? `${eur(studio.prices.firstDayEUR)} / dag`
       : "";
+  const bricolage = await readFile(
+    join(process.cwd(), "assets/fonts/BricolageGrotesque-800.ttf")
+  );
 
   return new ImageResponse(
     (
@@ -77,6 +83,7 @@ export default async function OgImage({ params }) {
             display: "flex",
             fontSize: studio.name.length > 60 ? 52 : 64,
             fontWeight: 800,
+            fontFamily: "Bricolage",
             letterSpacing: "-0.03em",
             lineHeight: 1.05,
             maxWidth: 1000,
@@ -102,6 +109,11 @@ export default async function OgImage({ params }) {
         </div>
       </div>
     ),
-    size
+    {
+      ...size,
+      fonts: [
+        { name: "Bricolage", data: bricolage, weight: 800, style: "normal" },
+      ],
+    }
   );
 }
