@@ -134,6 +134,9 @@ export default async function LandingPage({ params }) {
           : `${n} ${noun.toLowerCase()}'s te huur in ${page.city}${price ? `, ${price}` : ""}.`}{" "}
         Vergelijk op wat telt — m², daglicht, limbowand, parkeren — en boek
         direct.
+        {page.type === "foto"
+          ? " Vrijwel elke studio is ook voor video- en filmproducties te huren."
+          : ""}
       </Typography>
 
       <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -247,6 +250,9 @@ function TypeOverviewPage({ overview }) {
         {`${n} ${noun.toLowerCase()}'s te huur in Nederland en België${price ? `, ${price}` : ""}.`}{" "}
         Vergelijk op wat telt — m², daglicht, limbowand, parkeren — en boek
         direct.
+        {overview.type === "foto"
+          ? " Vrijwel elke studio is ook voor video- en filmproducties te huren."
+          : ""}
       </Typography>
 
       <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2">
