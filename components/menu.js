@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { KaderMark } from "@/components/kader-mark";
 
@@ -49,6 +49,35 @@ export function Menu() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
+  /* Toetsenbord: bij open menu wordt de rest van de pagina inert (Tab kan
+   * er niet meer in — feitelijk een focus-trap) en gaat de focus naar het
+   * eerste menu-item; bij sluiten terug naar de menuknop. */
+  const overlayRef = useRef(null);
+  const buttonRef = useRef(null);
+  const wasOpenRef = useRef(false);
+
+  useEffect(() => {
+    const overlay = overlayRef.current;
+    const button = buttonRef.current;
+    const others = [...document.body.children].filter(
+      (el) => el !== overlay && el !== button && el.tagName !== "SCRIPT"
+    );
+
+    if (open) {
+      for (const el of others) el.setAttribute("inert", "");
+      overlay?.querySelector("a")?.focus();
+      wasOpenRef.current = true;
+    } else if (wasOpenRef.current) {
+      for (const el of others) el.removeAttribute("inert");
+      button?.focus();
+      wasOpenRef.current = false;
+    }
+
+    return () => {
+      for (const el of others) el.removeAttribute("inert");
+    };
+  }, [open]);
+
   /* Scroll-lock mét gutter-compensatie: als de scrollbar verdwijnt of
    * terugkomt mag de layout niet verspringen tijdens de fade. */
   useEffect(() => {
@@ -71,6 +100,10 @@ export function Menu() {
     <>
       {/* overlay */}
       <div
+        ref={overlayRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Menu"
         aria-hidden={!open}
         onClick={closeMenu}
         className={`fixed inset-0 z-50 flex items-center justify-center bg-white/75 backdrop-blur-xl transition-opacity duration-[400ms] ease-out ${
@@ -121,6 +154,7 @@ export function Menu() {
 
       {/* hamburger / sluitknop */}
       <button
+        ref={buttonRef}
         type="button"
         aria-label={open ? "Sluit menu" : "Open menu"}
         aria-expanded={open}

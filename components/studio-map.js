@@ -238,6 +238,7 @@ export function StudioMap() {
     const mapRef = useRef(null);
     const markersRef = useRef(new Map());
     const cardRef = useRef(null);
+    const sheetCloseRef = useRef(null);
     const openRef = useRef({ card: false, sheet: false });
 
     const [card, setCard] = useState(null);
@@ -259,6 +260,11 @@ export function StudioMap() {
     useEffect(() => {
         openRef.current = { card: !!card, sheet: sheet.open };
     }, [card, sheet]);
+
+    // focus naar het paneel zodra het opent — Tab loopt daarna door de lijst
+    useEffect(() => {
+        if (sheet.open) sheetCloseRef.current?.focus();
+    }, [sheet.open]);
 
     const closeAll = () => {
         setCard(null);
@@ -740,8 +746,14 @@ export function StudioMap() {
                 )}
             </div>
 
-            {/* Cluster-paneel: schuift rechts in, schermhoog minus marge */}
+            {/* Cluster-paneel: schuift rechts in, schermhoog minus marge.
+                inert als 'ie dicht is — anders tabt het toetsenbord door
+                offscreen lijstitems heen */}
             <div
+                role="dialog"
+                aria-label="Studio's in dit cluster"
+                aria-hidden={!sheet.open}
+                inert={!sheet.open}
                 className={`absolute bottom-4 right-4 top-4 z-20 w-[380px] max-w-[calc(100vw-2rem)] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
                     sheet.open
                         ? "translate-x-0"
@@ -773,6 +785,7 @@ export function StudioMap() {
                             </Typography>
                         </div>
                         <button
+                            ref={sheetCloseRef}
                             type="button"
                             aria-label="Sluit lijst"
                             onClick={() =>
