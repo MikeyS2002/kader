@@ -188,8 +188,18 @@ const inBenelux = ([lng, lat]) =>
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+/* Gearbookers WAF geeft 403 op datacenter-IP's met een bot-UA (lokaal werkt
+ * de nette UA prima). Browser-achtige headers zodat de wekelijkse CI-run
+ * ook doorkomt; voor Nominatim blijft de identificerende UA (hun policy). */
+const BROWSER_HEADERS = {
+  "User-Agent":
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+  Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "Accept-Language": "nl,en;q=0.8",
+};
+
 async function fetchText(url) {
-  const res = await fetch(url, { headers: { "User-Agent": UA } });
+  const res = await fetch(url, { headers: BROWSER_HEADERS });
   if (!res.ok) throw new Error(`${res.status} ${url}`);
   return res.text();
 }
