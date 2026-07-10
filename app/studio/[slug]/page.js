@@ -48,10 +48,16 @@ export default async function StudioPage({ params }) {
 
   const priceRows = [
     ["per uur", studio.prices.hourEUR],
-    ["eerste dag", studio.prices.firstDayEUR],
+    ["2 uur", studio.prices.twoHoursEUR],
+    ["dagdeel (4 uur)", studio.prices.dayPartEUR],
+    [
+      studio.prices.extraDayEUR ? "eerste dag" : "dag",
+      studio.prices.firstDayEUR,
+    ],
     ["extra dag", studio.prices.extraDayEUR],
     ["per week", studio.prices.weekEUR],
   ].filter(([, v]) => v);
+  const isDirect = studio.source === "direct";
   const specs = specsList(studio.specs);
   const cityPage = studio.citySlug
     ? `/${TYPE_URL_PREFIX[studio.type]}-${studio.citySlug}`
@@ -68,7 +74,13 @@ export default async function StudioPage({ params }) {
         url: `${SITE_URL}/studio/${studio.slug}`,
         offers: {
           "@type": "Offer",
-          price: String(studio.prices.hourEUR ?? studio.prices.firstDayEUR ?? ""),
+          price: String(
+            studio.prices.hourEUR ??
+              studio.prices.twoHoursEUR ??
+              studio.prices.dayPartEUR ??
+              studio.prices.firstDayEUR ??
+              ""
+          ),
           priceCurrency: "EUR",
           availability: "https://schema.org/InStock",
           url: studio.url,
@@ -204,19 +216,25 @@ export default async function StudioPage({ params }) {
               Huurprijzen
             </Typography>
             <div className="mt-2">
-              {priceRows.map(([label, value]) => (
-                <div
-                  key={label}
-                  className="flex items-baseline justify-between border-t border-dashed border-line py-2.5 first:border-t-0"
-                >
-                  <Typography type="caption" className="opacity-70">
-                    {label}
-                  </Typography>
-                  <Typography type="spec" className="font-medium">
-                    {eur(value)}
-                  </Typography>
-                </div>
-              ))}
+              {priceRows.length ? (
+                priceRows.map(([label, value]) => (
+                  <div
+                    key={label}
+                    className="flex items-baseline justify-between border-t border-dashed border-line py-2.5 first:border-t-0"
+                  >
+                    <Typography type="caption" className="opacity-70">
+                      {label}
+                    </Typography>
+                    <Typography type="spec" className="font-medium">
+                      {eur(value)}
+                    </Typography>
+                  </div>
+                ))
+              ) : (
+                <Typography type="caption" as="p" className="py-2.5 opacity-70">
+                  prijs op aanvraag — zie de site van de studio
+                </Typography>
+              )}
             </div>
 
             <StudioCta
@@ -225,14 +243,21 @@ export default async function StudioPage({ params }) {
                 name: studio.name,
                 city: studio.city,
                 type: studio.type,
-                price: studio.prices.hourEUR ?? studio.prices.firstDayEUR ?? 0,
+                price:
+                  studio.prices.hourEUR ??
+                  studio.prices.dayPartEUR ??
+                  studio.prices.firstDayEUR ??
+                  0,
                 url: studio.url,
               }}
+              bookLabel={isDirect ? "Boek bij de studio" : "Boek via Gearbooker"}
               mapHref={`/?studio=${studio.id}`}
             />
 
             <Typography type="caption" as="p" className="mt-4 opacity-40">
-              via gearbooker.com · prijzen kunnen daar afwijken
+              {isDirect
+                ? "rechtstreeks bij de studio · prijzen van hun site, kunnen afwijken"
+                : "via gearbooker.com · prijzen kunnen daar afwijken"}
             </Typography>
           </div>
 

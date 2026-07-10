@@ -10,9 +10,13 @@ import { BADGE_VARIANTS, eur, specsList, TYPE_LABELS } from "@/lib/studios";
 export function StudioCard({ studio }) {
   const price = studio.prices.hourEUR
     ? `${eur(studio.prices.hourEUR)}/uur`
-    : studio.prices.firstDayEUR
-      ? `${eur(studio.prices.firstDayEUR)}/dag`
-      : null;
+    : studio.prices.twoHoursEUR
+      ? `${eur(studio.prices.twoHoursEUR)} / 2 uur`
+      : studio.prices.dayPartEUR
+        ? `${eur(studio.prices.dayPartEUR)}/dagdeel`
+        : studio.prices.firstDayEUR
+          ? `${eur(studio.prices.firstDayEUR)}/dag`
+          : null;
   const specs = specsList(studio.specs).slice(0, 4).join(" · ");
 
   return (

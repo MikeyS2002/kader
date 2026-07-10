@@ -158,7 +158,7 @@ export default async function LandingPage({ params }) {
       ) : null}
 
       <Typography type="caption" as="p" className="mt-14 opacity-40">
-        aanbod en prijzen via gearbooker.com
+        aanbod via gearbooker.com en rechtstreeks bij studio&apos;s
       </Typography>
     </main>
   );

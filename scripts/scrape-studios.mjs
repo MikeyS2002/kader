@@ -346,6 +346,68 @@ function jitter(id, [lng, lat]) {
   return [lng + a * 0.009, lat + b * 0.006];
 }
 
+/* Vrije zoekopdracht (straatadres) → coördinaten, met cache. */
+async function geocodeQuery(q, cache) {
+  const key = `addr:${q.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+  if (cache[key] !== undefined) return cache[key];
+  await sleep(1100);
+  try {
+    const res = await fetch(
+      `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q)}&countrycodes=nl,be&format=json&limit=1`,
+      { headers: { "User-Agent": UA } }
+    );
+    const data = await res.json();
+    cache[key] = data[0] ? [Number(data[0].lon), Number(data[0].lat)] : null;
+  } catch {
+    cache[key] = null;
+  }
+  return cache[key];
+}
+
+/* Gecureerde studio's met eigen site (data/studios-direct.json): directe
+ * boekingslinks, eigen beschrijvingen, en waar mogelijk adres-precieze
+ * coördinaten (alleen jitter als het adres geen huisnummer heeft). */
+async function loadDirectStudios(cache) {
+  let raw;
+  try {
+    raw = JSON.parse(
+      await readFile(path.join(OUT_DIR, "studios-direct.json"), "utf8")
+    );
+  } catch {
+    return [];
+  }
+  const out = [];
+  for (const s of raw.studios ?? []) {
+    const prices = {
+      hourEUR: null,
+      twoHoursEUR: null,
+      dayPartEUR: null,
+      firstDayEUR: null,
+      extraDayEUR: null,
+      weekEUR: null,
+      ...s.prices,
+    };
+    const precise = /\d/.test(s.address ?? "");
+    let coords = s.address ? await geocodeQuery(s.address, cache) : null;
+    if (!coords) coords = await geocode(s.city, s.citySlug, cache);
+    if (!coords || !inBenelux(coords)) {
+      console.warn(`direct: geen coördinaten voor ${s.name}`);
+      continue;
+    }
+    const [lng, lat] = precise ? coords : jitter(s.id, coords);
+    out.push({
+      ...s,
+      prices,
+      slug: `${slugifyName(s.name)}-${s.id}`,
+      lng: +lng.toFixed(5),
+      lat: +lat.toFixed(5),
+    });
+  }
+  return out;
+}
+
+const normName = (n) => n.toLowerCase().replace(/[^a-z0-9]+/g, "");
+
 async function geocode(cityName, citySlug, cache) {
   const key = citySlug.toLowerCase();
   if (NL_PLACES[key]) return NL_PLACES[key];
@@ -496,6 +558,24 @@ async function main() {
     withCoords.push({ ...studio, lng: +lng.toFixed(5), lat: +lat.toFixed(5) });
   }
 
+  /* Gecureerde direct-bron mergen; bij naamsgelijkheid wint direct
+   * (eigen boekingslink, geen tussenpartij). */
+  const direct = await loadDirectStudios(cache);
+  const directKeys = new Set(
+    direct.map((s) => `${normName(s.name)}|${s.citySlug}`)
+  );
+  const merged = [
+    ...withCoords.filter((s) => {
+      const dup = directKeys.has(`${normName(s.name)}|${s.citySlug}`);
+      if (dup) console.log(`dubbel, direct wint: ${s.name}`);
+      return !dup;
+    }),
+    ...direct,
+  ];
+  console.log(`direct-bron: ${direct.length} studio's toegevoegd`);
+  withCoords.length = 0;
+  withCoords.push(...merged);
+
   /* Sanity-guard: bij een half-mislukte scrape (sitemap kapot, structuur
    * gewijzigd) de bestaande dataset NIET overschrijven — belangrijk nu dit
    * wekelijks onbeheerd draait in CI. */
@@ -539,6 +619,7 @@ async function main() {
       image: s.image,
       prices: s.prices,
       specs: s.specs,
+      source: s.source,
       desc:
         s.description.length > 220
           ? `${s.description.slice(0, 217).replace(/\n+/g, " ")}…`

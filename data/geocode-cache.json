@@ -187,5 +187,55 @@
   "schelle": [
     4.3361875,
     51.1245635
+  ],
+  "addr:zamenhofstraat-150-1022-ag-amsterdam": [
+    4.9313856,
+    52.3859615
+  ],
+  "addr:zamenhofstraat-112-1022-ag-amsterdam": [
+    4.931057,
+    52.3868747
+  ],
+  "addr:nieuwe-hemweg-5f-1013-bg-amsterdam": [
+    4.8678249,
+    52.3949141
+  ],
+  "addr:pijnacker": [
+    4.434186,
+    52.0200581
+  ],
+  "addr:lockandsestraat-4-5437-pl-beers": [
+    5.8358887,
+    51.7198742
+  ],
+  "addr:loopkantstraat-18a-5405-ac-uden": null,
+  "addr:newtonstraat-3-3401-ja-ijsselstein": [
+    5.0637234,
+    52.0143229
+  ],
+  "addr:beijnesweg-14-2031-bb-haarlem": [
+    4.6669554,
+    52.388659
+  ],
+  "addr:sisalbaan-13-2352-az-leiderdorp": [
+    4.5181061,
+    52.1648737
+  ],
+  "addr:bolderweg-2-almere": [
+    5.2647467,
+    52.4090943
+  ],
+  "addr:oudegracht-a-d-werf-368-3511-pk-utrecht": null,
+  "addr:meeuwenlaan-98-1021-jl-amsterdam": [
+    4.9215021,
+    52.3857542
+  ],
+  "addr:amsterdam-oost": [
+    4.9305528,
+    52.3518137
+  ],
+  "addr:meeuwenlaan-106-1021-jl-amsterdam": [
+    4.9226142,
+    52.3856903
   ]
 }

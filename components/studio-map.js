@@ -59,20 +59,36 @@ function specsLine(specs) {
 
 const eur = (v) => `€${v % 1 ? v.toFixed(2).replace(".", ",") : v}`;
 
-/* Prijsweergave: uurprijs als die er is, anders de eerste-dagprijs.
+/* Prijsweergave: kleinste eenheid eerst (uur → 2 uur → dagdeel → dag).
  * Losse tarieven (eerste dag duurder dan extra dagen!) apart als regel. */
 function priceLabel(prices) {
     if (prices.hourEUR) return `${eur(prices.hourEUR)}/uur`;
+    if (prices.twoHoursEUR) return `${eur(prices.twoHoursEUR)} / 2 uur`;
+    if (prices.dayPartEUR) return `${eur(prices.dayPartEUR)}/dagdeel`;
     if (prices.firstDayEUR) return `${eur(prices.firstDayEUR)}/dag`;
     return "";
 }
 
 function priceTiers(prices) {
     const parts = [];
-    if (prices.firstDayEUR) parts.push(`1e dag ${eur(prices.firstDayEUR)}`);
+    if (prices.twoHoursEUR) parts.push(`2 uur ${eur(prices.twoHoursEUR)}`);
+    if (prices.dayPartEUR) parts.push(`dagdeel ${eur(prices.dayPartEUR)}`);
+    if (prices.firstDayEUR)
+        parts.push(
+            `${prices.extraDayEUR ? "1e dag" : "dag"} ${eur(prices.firstDayEUR)}`,
+        );
     if (prices.extraDayEUR) parts.push(`extra dag ${eur(prices.extraDayEUR)}`);
     if (prices.weekEUR) parts.push(`week ${eur(prices.weekEUR)}`);
     return parts.join(" · ");
+}
+
+/* Genormaliseerd naar ± uurtarief, zodat sorteren over eenheden heen klopt. */
+function priceSort(prices) {
+    if (prices.hourEUR) return prices.hourEUR;
+    if (prices.twoHoursEUR) return prices.twoHoursEUR / 2;
+    if (prices.dayPartEUR) return prices.dayPartEUR / 4;
+    if (prices.firstDayEUR) return prices.firstDayEUR / 8;
+    return 0;
 }
 
 /* Gescrapete studio's (scripts/scrape-studios.mjs) → GeoJSON features.
@@ -89,7 +105,8 @@ const STUDIO_FEATURES = mapData.studios.map((s) => ({
         studioType: TYPE_LABELS[s.type] ?? s.type,
         priceLabel: priceLabel(s.prices),
         priceTiers: priceTiers(s.prices),
-        priceSort: s.prices.hourEUR ?? s.prices.firstDayEUR ?? 0,
+        priceSort: priceSort(s.prices),
+        source: s.source ?? "gearbooker",
         url: s.url,
         image: s.image ?? "",
         description: s.desc ?? "",
@@ -714,7 +731,9 @@ export function StudioMap() {
                                 as="p"
                                 className="mt-2 opacity-40"
                             >
-                                via gearbooker.com
+                                {card.source === "direct"
+                                    ? "rechtstreeks te boeken bij de studio"
+                                    : "via gearbooker.com"}
                             </Typography>
                         </div>
                     </div>
@@ -751,7 +770,6 @@ export function StudioMap() {
                                 {sheetCities.length === 1
                                     ? sheetCities[0]
                                     : `${sheetCities.length} plaatsen`}
-                                {" · via gearbooker.com"}
                             </Typography>
                         </div>
                         <button

@@ -8,7 +8,7 @@ import { track } from "@/lib/analytics";
 /* De twee knoppen op de studio-detailpagina, met event-tracking.
  * booking_click is hét conversiemoment richting Gearbooker. */
 
-export function StudioCta({ studio, mapHref }) {
+export function StudioCta({ studio, mapHref, bookLabel = "Boek via Gearbooker" }) {
   const params = {
     studio_id: studio.id,
     studio_name: studio.name,
@@ -21,7 +21,7 @@ export function StudioCta({ studio, mapHref }) {
     <div className="mt-5 flex flex-wrap gap-2.5">
       <Button
         variant="primary"
-        label="Boek via Gearbooker"
+        label={bookLabel}
         as="a"
         href={studio.url}
         target="_blank"
