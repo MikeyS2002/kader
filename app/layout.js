@@ -4,11 +4,9 @@ import Script from "next/script";
 import { GridOverlay } from "@/components/grid-overlay";
 import { Menu } from "@/components/menu";
 
-import { SITE_URL } from "@/lib/site";
+import { GA_ID, SITE_URL } from "@/lib/site";
 
 import "./globals.css";
-
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 // Display — koppen & wordmark
 const bricolage = Bricolage_Grotesque({
