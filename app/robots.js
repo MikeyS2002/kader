@@ -1,4 +1,4 @@
-const BASE_URL = "https://kader-rho.vercel.app";
+import { SITE_URL as BASE_URL } from "@/lib/site";
 
 export default function robots() {
   return {

@@ -1,6 +1,6 @@
+import { SITE_URL as BASE_URL } from "@/lib/site";
 import { landingPages, studios } from "@/lib/studios";
 
-const BASE_URL = "https://kader-rho.vercel.app";
 
 export default function sitemap() {
   return [

@@ -2,7 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Badge } from "@/components/badge";
-import { Button } from "@/components/button";
+import { PageEvent } from "@/components/page-event";
+import { StudioCta } from "@/components/studio-cta";
 import {
   BADGE_VARIANTS,
   eur,
@@ -13,6 +14,7 @@ import {
   TYPE_NOUNS,
   TYPE_URL_PREFIX,
 } from "@/lib/studios";
+import { SITE_URL } from "@/lib/site";
 import { Typography } from "@/components/typography";
 
 /* Studio-detailpagina — statisch gegenereerd per studio uit data/studios.json.
@@ -63,7 +65,7 @@ export default async function StudioPage({ params }) {
         name: studio.name,
         image: studio.image || undefined,
         description: studio.description || undefined,
-        url: `https://kader-rho.vercel.app/studio/${studio.slug}`,
+        url: `${SITE_URL}/studio/${studio.slug}`,
         offers: {
           "@type": "Offer",
           price: String(studio.prices.hourEUR ?? studio.prices.firstDayEUR ?? ""),
@@ -88,7 +90,7 @@ export default async function StudioPage({ params }) {
             "@type": "ListItem",
             position: 1,
             name: "Kader",
-            item: "https://kader-rho.vercel.app/",
+            item: `${SITE_URL}/`,
           },
           ...(cityPage
             ? [
@@ -96,7 +98,7 @@ export default async function StudioPage({ params }) {
                   "@type": "ListItem",
                   position: 2,
                   name: `${TYPE_NOUNS[studio.type]} huren in ${studio.city}`,
-                  item: `https://kader-rho.vercel.app${cityPage}`,
+                  item: `${SITE_URL}${cityPage}`,
                 },
               ]
             : []),
@@ -115,6 +117,15 @@ export default async function StudioPage({ params }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <PageEvent
+        event="studio_detail_view"
+        params={{
+          studio_id: studio.id,
+          studio_name: studio.name,
+          city: studio.city,
+          studio_type: studio.type,
+        }}
       />
       <Link
         href={`/?studio=${studio.id}`}
@@ -208,22 +219,17 @@ export default async function StudioPage({ params }) {
               ))}
             </div>
 
-            <div className="mt-5 flex flex-wrap gap-2.5">
-              <Button
-                variant="primary"
-                label="Boek via Gearbooker"
-                as="a"
-                href={studio.url}
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-              />
-              <Button
-                variant="ghost"
-                label="Toon op kaart"
-                as={Link}
-                href={`/?studio=${studio.id}`}
-              />
-            </div>
+            <StudioCta
+              studio={{
+                id: studio.id,
+                name: studio.name,
+                city: studio.city,
+                type: studio.type,
+                price: studio.prices.hourEUR ?? studio.prices.firstDayEUR ?? 0,
+                url: studio.url,
+              }}
+              mapHref={`/?studio=${studio.id}`}
+            />
 
             <Typography type="caption" as="p" className="mt-4 opacity-40">
               via gearbooker.com · prijzen kunnen daar afwijken

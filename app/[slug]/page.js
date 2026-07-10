@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Button } from "@/components/button";
+import { PageEvent } from "@/components/page-event";
 import { StudioCard } from "@/components/studio-card";
 import { Eyebrow, Typography } from "@/components/typography";
 import {
@@ -12,6 +13,7 @@ import {
   landingsForType,
   TYPE_NOUNS,
 } from "@/lib/studios";
+import { SITE_URL } from "@/lib/site";
 
 /* SEO-landingspagina's: /fotostudio-huren-amsterdam enz. — één pagina per
  * (type × stad) met alle studio's als listing cards en interne links naar
@@ -62,7 +64,7 @@ export default async function LandingPage({ params }) {
             "@type": "ListItem",
             position: 1,
             name: "Kader",
-            item: "https://kader-rho.vercel.app/",
+            item: `${SITE_URL}/`,
           },
           {
             "@type": "ListItem",
@@ -78,7 +80,7 @@ export default async function LandingPage({ params }) {
         itemListElement: page.studios.map((s, i) => ({
           "@type": "ListItem",
           position: i + 1,
-          url: `https://kader-rho.vercel.app/studio/${s.slug}`,
+          url: `${SITE_URL}/studio/${s.slug}`,
           name: s.name,
         })),
       },
@@ -90,6 +92,10 @@ export default async function LandingPage({ params }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <PageEvent
+        event="city_page_view"
+        params={{ city: page.city, studio_type: page.type, count: n }}
       />
 
       <Link

@@ -1,9 +1,14 @@
 import { Bricolage_Grotesque, Instrument_Sans, Spline_Sans_Mono } from "next/font/google";
+import Script from "next/script";
 
 import { GridOverlay } from "@/components/grid-overlay";
 import { Menu } from "@/components/menu";
 
+import { SITE_URL } from "@/lib/site";
+
 import "./globals.css";
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 // Display — koppen & wordmark
 const bricolage = Bricolage_Grotesque({
@@ -30,7 +35,7 @@ const splineMono = Spline_Sans_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://kader-rho.vercel.app"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Kader — elke studio in beeld",
     template: "%s — Kader",
@@ -57,18 +62,18 @@ const SITE_JSON_LD = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://kader-rho.vercel.app/#organization",
+      "@id": `${SITE_URL}/#organization`,
       name: "Kader",
-      url: "https://kader-rho.vercel.app",
-      logo: "https://kader-rho.vercel.app/icon",
+      url: SITE_URL,
+      logo: `${SITE_URL}/icon`,
       slogan: "elke studio in beeld",
     },
     {
       "@type": "WebSite",
       name: "Kader",
-      url: "https://kader-rho.vercel.app",
+      url: SITE_URL,
       inLanguage: "nl",
-      publisher: { "@id": "https://kader-rho.vercel.app/#organization" },
+      publisher: { "@id": `${SITE_URL}/#organization` },
     },
   ],
 };
@@ -87,6 +92,20 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(SITE_JSON_LD) }}
         />
+        {GA_ID ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-init" strategy="afterInteractive">
+              {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}');`}
+            </Script>
+          </>
+        ) : null}
       </body>
     </html>
   );
