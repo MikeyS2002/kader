@@ -486,54 +486,79 @@ async function main() {
     withCoords.push({ ...studio, lng: +lng.toFixed(5), lat: +lat.toFixed(5) });
   }
 
+  /* Sanity-guard: bij een half-mislukte scrape (sitemap kapot, structuur
+   * gewijzigd) de bestaande dataset NIET overschrijven — belangrijk nu dit
+   * wekelijks onbeheerd draait in CI. */
+  const MIN_STUDIOS = 100;
+  if (withCoords.length < MIN_STUDIOS) {
+    console.error(
+      `sanity-check: maar ${withCoords.length} studio's (< ${MIN_STUDIOS}) — dataset niet overschreven`
+    );
+    process.exit(1);
+  }
+  if (failed.length > 20) {
+    console.error(
+      `sanity-check: ${failed.length} listings mislukt (> 20) — dataset niet overschreven`
+    );
+    process.exit(1);
+  }
+
   await writeFile(CACHE_FILE, JSON.stringify(cache, null, 2));
-  await writeFile(
-    OUT_FILE,
-    JSON.stringify(
-      {
-        generatedAt: new Date().toISOString(),
-        source:
-          "gearbooker.com (sitemaps, robots.txt-conform) — prototype-data, niet herpubliceren",
-        count: withCoords.length,
-        failed,
-        studios: withCoords,
-      },
-      null,
-      2
-    )
-  );
+  await writeIfChanged(OUT_FILE, {
+    generatedAt: new Date().toISOString(),
+    source:
+      "gearbooker.com (sitemaps, robots.txt-conform) — prototype-data, niet herpubliceren",
+    count: withCoords.length,
+    failed,
+    studios: withCoords,
+  });
 
   /* Slanke variant voor de kaart (client-bundle): zonder volledige
    * beschrijvingen — alleen wat de kaart-UI nodig heeft. */
-  await writeFile(
-    path.join(OUT_DIR, "studios.map.json"),
-    JSON.stringify({
-      generatedAt: new Date().toISOString(),
-      studios: withCoords.map((s) => ({
-        id: s.id,
-        slug: s.slug,
-        name: s.name,
-        type: s.type,
-        city: s.city,
-        lng: s.lng,
-        lat: s.lat,
-        url: s.url,
-        image: s.image,
-        prices: s.prices,
-        specs: s.specs,
-        desc:
-          s.description.length > 220
-            ? `${s.description.slice(0, 217).replace(/\n+/g, " ")}…`
-            : s.description.replace(/\n+/g, " "),
-      })),
-    })
-  );
+  await writeIfChanged(path.join(OUT_DIR, "studios.map.json"), {
+    generatedAt: new Date().toISOString(),
+    studios: withCoords.map((s) => ({
+      id: s.id,
+      slug: s.slug,
+      name: s.name,
+      type: s.type,
+      city: s.city,
+      lng: s.lng,
+      lat: s.lat,
+      url: s.url,
+      image: s.image,
+      prices: s.prices,
+      specs: s.specs,
+      desc:
+        s.description.length > 220
+          ? `${s.description.slice(0, 217).replace(/\n+/g, " ")}…`
+          : s.description.replace(/\n+/g, " "),
+    })),
+  });
 
   const perType = {};
   for (const s of withCoords) perType[s.type] = (perType[s.type] ?? 0) + 1;
   console.log(`\nklaar: ${withCoords.length} studio's → data/studios.json`);
   console.log("per type:", perType);
   console.log("mislukt:", failed.length);
+}
+
+/* Schrijf alleen als de inhoud echt veranderd is (generatedAt telt niet
+ * mee) — zo commit de wekelijkse CI-run niet bij ongewijzigde data. */
+async function writeIfChanged(file, payload) {
+  const strip = ({ generatedAt, ...rest }) => rest;
+  try {
+    const prev = JSON.parse(await readFile(file, "utf8"));
+    if (JSON.stringify(strip(prev)) === JSON.stringify(strip(payload))) {
+      console.log(`${path.basename(file)}: ongewijzigd`);
+      return false;
+    }
+  } catch {
+    /* bestand bestaat nog niet of is corrupt → gewoon schrijven */
+  }
+  await writeFile(file, JSON.stringify(payload, null, 2));
+  console.log(`${path.basename(file)}: bijgewerkt`);
+  return true;
 }
 
 main().catch((e) => {
