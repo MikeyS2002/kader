@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { Badge } from "@/components/badge";
 import { PageEvent } from "@/components/page-event";
+import { SiteFooter } from "@/components/site-footer";
 import { StudioCta } from "@/components/studio-cta";
 import {
   BADGE_VARIANTS,
@@ -125,6 +126,7 @@ export default async function StudioPage({ params }) {
   };
 
   return (
+    <>
     <main className="mx-auto w-full max-w-[1080px] px-6 pb-24 pt-24 sm:px-10">
       <script
         type="application/ld+json"
@@ -271,5 +273,7 @@ export default async function StudioPage({ params }) {
         </div>
       </div>
     </main>
+      <SiteFooter />
+    </>
   );
 }

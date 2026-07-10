@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Places-leadlijst: tijdelijk werkmateriaal (Google ToS: niet bewaren/publiceren)
+data/studio-kandidaten.json

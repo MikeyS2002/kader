@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { Button } from "@/components/button";
 import { PageEvent } from "@/components/page-event";
+import { SiteFooter } from "@/components/site-footer";
 import { StudioCard } from "@/components/studio-card";
 import { Eyebrow, Typography } from "@/components/typography";
 import {
@@ -88,6 +89,7 @@ export default async function LandingPage({ params }) {
   };
 
   return (
+    <>
     <main className="mx-auto w-full max-w-[1080px] px-6 pb-24 pt-24 sm:px-10">
       <script
         type="application/ld+json"
@@ -161,5 +163,7 @@ export default async function LandingPage({ params }) {
         aanbod via gearbooker.com en rechtstreeks bij studio&apos;s
       </Typography>
     </main>
+      <SiteFooter />
+    </>
   );
 }
