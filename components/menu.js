@@ -15,7 +15,9 @@ import { KaderMark } from "@/components/kader-mark";
 
 const ITEMS = [
   { href: "/", label: "kaart" },
-  { href: "/brand", label: "brand" },
+  { href: "/fotostudio-huren", label: "fotostudio's" },
+  { href: "/podcaststudio-huren", label: "podcaststudio's" },
+  { href: "/muziekstudio-huren", label: "muziekstudio's" },
 ];
 
 const EASE = "cubic-bezier(0.22, 1, 0.36, 1)";
@@ -131,7 +133,7 @@ export function Menu() {
                     if (item.href === pathname) closeMenu();
                   }}
                   tabIndex={open ? 0 : -1}
-                  className="focusable group font-display text-[clamp(56px,10vw,110px)] font-extrabold lowercase leading-none tracking-[-0.04em] text-flag no-underline hover:no-underline"
+                  className="focusable group font-display text-[clamp(36px,7vw,72px)] font-extrabold lowercase leading-none tracking-[-0.04em] text-flag no-underline hover:no-underline"
                   style={{
                     animation: `kader-rise-in 500ms ${EASE} ${120 + i * 80}ms both`,
                   }}

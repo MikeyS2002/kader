@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { KaderMark } from "@/components/kader-mark";
 import { Typography } from "@/components/typography";
-import { landingsForType, TYPE_NOUNS } from "@/lib/studios";
+import { landingsForType, TYPE_NOUNS, TYPE_URL_PREFIX } from "@/lib/studios";
 
 /* Footer voor contentpagina's (landingspagina's, studio-detail, 404):
  * interne links naar de grootste steden per type — goed voor bezoekers
@@ -16,9 +16,12 @@ export function SiteFooter() {
       <div className="mx-auto grid w-full max-w-[1080px] gap-10 px-6 py-14 sm:grid-cols-3 sm:px-10">
         {TYPES.map((type) => (
           <nav key={type} aria-label={`${TYPE_NOUNS[type]} huren per stad`}>
-            <Typography type="label" as="h2" className="!text-[12px] opacity-50">
+            <Link
+              href={`/${TYPE_URL_PREFIX[type]}`}
+              className="type-label !text-[12px] !text-flag opacity-50 hover:opacity-100"
+            >
               {`${TYPE_NOUNS[type]} huren`}
-            </Typography>
+            </Link>
             <ul className="mt-4 space-y-2">
               {landingsForType(type)
                 .slice(0, 6)
@@ -46,9 +49,6 @@ export function SiteFooter() {
         </span>
         <Link href="/" className="font-mono text-[11px] uppercase tracking-[0.08em] !text-flag opacity-55 hover:opacity-100">
           kaart
-        </Link>
-        <Link href="/brand" className="font-mono text-[11px] uppercase tracking-[0.08em] !text-flag opacity-55 hover:opacity-100">
-          brand
         </Link>
         <Typography type="caption" className="ml-auto opacity-40">
           elke studio in beeld · aanbod via gearbooker.com en rechtstreeks bij

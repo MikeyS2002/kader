@@ -9,10 +9,12 @@ import { Eyebrow, Typography } from "@/components/typography";
 import {
   fromPrice,
   getLandingBySlug,
+  getTypeOverview,
   landingPages,
   landingsForCity,
   landingsForType,
   TYPE_NOUNS,
+  typeOverviews,
 } from "@/lib/studios";
 import { SITE_URL } from "@/lib/site";
 
@@ -23,11 +25,24 @@ import { SITE_URL } from "@/lib/site";
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return landingPages.map((p) => ({ slug: p.slug }));
+  return [
+    ...typeOverviews.map((o) => ({ slug: o.slug })),
+    ...landingPages.map((p) => ({ slug: p.slug })),
+  ];
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
+  const overview = getTypeOverview(slug);
+  if (overview) {
+    const noun = TYPE_NOUNS[overview.type];
+    const price = fromPrice(overview.studios);
+    return {
+      title: `${noun} huren — ${overview.studios.length} studio's`,
+      description: `${noun} huren in ${overview.cities.length} steden in Nederland en België${price ? `, ${price}` : ""}. Vergelijk m², daglicht, limbowand en parkeren — specs en prijzen op één kaart.`,
+      alternates: { canonical: `/${overview.slug}` },
+    };
+  }
   const page = getLandingBySlug(slug);
   if (!page) return {};
   const noun = TYPE_NOUNS[page.type];
@@ -42,6 +57,8 @@ export async function generateMetadata({ params }) {
 
 export default async function LandingPage({ params }) {
   const { slug } = await params;
+  const overview = getTypeOverview(slug);
+  if (overview) return <TypeOverviewPage overview={overview} />;
   const page = getLandingBySlug(slug);
   if (!page) notFound();
 
@@ -158,6 +175,97 @@ export default async function LandingPage({ params }) {
           </div>
         </section>
       ) : null}
+
+      <Typography type="caption" as="p" className="mt-14 opacity-40">
+        aanbod via gearbooker.com en rechtstreeks bij studio&apos;s
+      </Typography>
+    </main>
+      <SiteFooter />
+    </>
+  );
+}
+
+/* Type-overzicht: alle steden en alle studio's van één type. */
+function TypeOverviewPage({ overview }) {
+  const noun = TYPE_NOUNS[overview.type];
+  const n = overview.studios.length;
+  const price = fromPrice(overview.studios);
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Kader",
+            item: `${SITE_URL}/`,
+          },
+          { "@type": "ListItem", position: 2, name: `${noun} huren` },
+        ],
+      },
+      {
+        "@type": "ItemList",
+        name: `${noun} huren`,
+        numberOfItems: n,
+        itemListElement: overview.cities.map((p, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          url: `${SITE_URL}/${p.slug}`,
+          name: `${noun} huren in ${p.city}`,
+        })),
+      },
+    ],
+  };
+
+  return (
+    <>
+    <main className="mx-auto w-full max-w-[1080px] px-6 pb-24 pt-24 sm:px-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <PageEvent
+        event="city_page_view"
+        params={{ city: "alle", studio_type: overview.type, count: n }}
+      />
+
+      <Link
+        href="/"
+        className="font-mono text-xs uppercase tracking-[0.12em] !text-flag opacity-55 hover:opacity-100"
+      >
+        ← alle studio&apos;s op de kaart
+      </Link>
+
+      <Eyebrow className="mt-10">
+        {`${n} studio's · ${overview.cities.length} steden`}
+      </Eyebrow>
+      <h1 className="mt-3">{`${noun} huren`}</h1>
+      <Typography type="body-l" as="p" className="mt-4 max-w-[52ch]">
+        {`${n} ${noun.toLowerCase()}'s te huur in Nederland en België${price ? `, ${price}` : ""}.`}{" "}
+        Vergelijk op wat telt — m², daglicht, limbowand, parkeren — en boek
+        direct.
+      </Typography>
+
+      <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2">
+        {overview.cities.map((p) => (
+          <Link key={p.slug} href={`/${p.slug}`} className="text-[15px] font-medium">
+            {`${p.city} (${p.studios.length})`}
+          </Link>
+        ))}
+      </div>
+
+      <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {overview.studios.map((s) => (
+          <StudioCard key={s.id} studio={s} />
+        ))}
+      </div>
+
+      <div className="mt-8">
+        <Button variant="ghost" label="Bekijk op de kaart" as={Link} href="/" />
+      </div>
 
       <Typography type="caption" as="p" className="mt-14 opacity-40">
         aanbod via gearbooker.com en rechtstreeks bij studio&apos;s

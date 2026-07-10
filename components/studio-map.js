@@ -36,6 +36,8 @@ const MAP_THEME = {
 };
 
 const PIN_COLOR = { fill: "#00B140", stroke: "#FFFFFF" };
+/* Geselecteerde pin (detailkaart open): flag met chroma-ring */
+const SELECTED_PIN = { fill: "#171716", stroke: "#00B140" };
 
 const TYPE_LABELS = { foto: "Foto", podcast: "Podcast", muziek: "Muziek" };
 const TYPE_BADGE = {
@@ -238,6 +240,7 @@ export function StudioMap() {
     const mapRef = useRef(null);
     const markersRef = useRef(new Map());
     const cardRef = useRef(null);
+    const cardIdRef = useRef(null);
     const sheetCloseRef = useRef(null);
     const openRef = useRef({ card: false, sheet: false });
 
@@ -265,6 +268,22 @@ export function StudioMap() {
     useEffect(() => {
         if (sheet.open) sheetCloseRef.current?.focus();
     }, [sheet.open]);
+
+    /* Geselecteerde pin zichtbaar maken: flag-vulling met chroma-ring
+     * zolang de detailkaart van die studio open staat. */
+    useEffect(() => {
+        cardIdRef.current = card?.id ?? null;
+        for (const [key, entry] of markersRef.current) {
+            if (entry.inner.textContent) continue; // clusters overslaan
+            const selected = key === cardIdRef.current;
+            entry.inner.style.background = selected
+                ? SELECTED_PIN.fill
+                : PIN_COLOR.fill;
+            entry.inner.style.borderColor = selected
+                ? SELECTED_PIN.stroke
+                : PIN_COLOR.stroke;
+        }
+    }, [card]);
 
     const closeAll = () => {
         setCard(null);
@@ -436,6 +455,13 @@ export function StudioMap() {
                     dying: false,
                     timeout: null,
                 });
+
+                // pin van de open detailkaart blijft gemarkeerd, ook als de
+                // marker tijdens zoomen opnieuw wordt aangemaakt
+                if (key === cardIdRef.current) {
+                    inner.style.background = SELECTED_PIN.fill;
+                    inner.style.borderColor = SELECTED_PIN.stroke;
+                }
 
                 inner.style.transition = "none";
                 if (origin) {
@@ -747,17 +773,17 @@ export function StudioMap() {
             </div>
 
             {/* Cluster-paneel: schuift rechts in, schermhoog minus marge.
-                inert als 'ie dicht is — anders tabt het toetsenbord door
-                offscreen lijstitems heen */}
+                Dicht = inert + invisible (na de uitschuif-animatie), zodat
+                het toetsenbord nooit door offscreen lijstitems kan tabben */}
             <div
                 role="dialog"
                 aria-label="Studio's in dit cluster"
                 aria-hidden={!sheet.open}
                 inert={!sheet.open}
-                className={`absolute bottom-4 right-4 top-4 z-20 w-[380px] max-w-[calc(100vw-2rem)] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                className={`absolute bottom-4 right-4 top-4 z-20 w-[380px] max-w-[calc(100vw-2rem)] transition-[transform,visibility] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
                     sheet.open
-                        ? "translate-x-0"
-                        : "pointer-events-none translate-x-[calc(100%+1.5rem)]"
+                        ? "visible translate-x-0"
+                        : "pointer-events-none invisible translate-x-[calc(100%+1.5rem)]"
                 }`}
             >
                 <div
@@ -969,7 +995,7 @@ function PlaceSearch({ onPick, onFocusInput }) {
 
     return (
         <div className="relative">
-            <div className="flex h-11 items-center gap-2.5 rounded-full border border-line bg-white pl-4 pr-4 shadow-[0_10px_30px_-15px_rgba(23,23,22,0.35)]">
+            <div className="flex h-11 items-center gap-2.5 rounded-full border border-line bg-white pl-4 pr-4 shadow-[0_10px_30px_-15px_rgba(23,23,22,0.35)] transition-colors duration-200 focus-within:border-chroma">
                 <svg
                     viewBox="0 0 16 16"
                     fill="none"

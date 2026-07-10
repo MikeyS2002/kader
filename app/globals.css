@@ -85,6 +85,13 @@
     background: var(--color-chroma);
     color: var(--color-flag);
   }
+
+  /* Toetsenbord-focus overal in merkgroen — ook op elementen zonder
+     .focusable (lijstitems, footer-links, formulieren) */
+  :focus-visible {
+    outline: 2px solid var(--color-chroma);
+    outline-offset: 3px;
+  }
 }
 
 /* ---------- Kaart-overlays ---------- */
