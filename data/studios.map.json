@@ -1,6 +1,238 @@
 {
-  "generatedAt": "2026-07-13T07:57:22.394Z",
+  "generatedAt": "2026-07-20T16:26:45.705Z",
   "studios": [
+    {
+      "id": "gb-16699",
+      "slug": "film-studio-arnhem-storyshot-studio-gb-16699",
+      "name": "Film studio Arnhem | Storyshot Studio",
+      "type": "foto",
+      "city": "Arnhem",
+      "lng": 5.89902,
+      "lat": 51.98482,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-film-studio-arnhem-storyshot-studio-in-arnhem-16699-l",
+      "image": "https://www.gearbooker.com/images/listing/00045199.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 423.5,
+        "extraDayEUR": 296.5,
+        "weekEUR": 2075
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Huur onze foto & filmstudio arnhem. Geschikt voor o.a. livestreams, productfilms, presentaties, interviews met autocue, etc."
+    },
+    {
+      "id": "gb-15405",
+      "slug": "foto-filmstudio-den-haag-40m2-gb-15405",
+      "name": "Foto - Filmstudio Den Haag // 40m2",
+      "type": "foto",
+      "city": "Den Haag",
+      "lng": 4.30088,
+      "lat": 52.07288,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-foto---filmstudio-den-haag-40m2-in-den-haag-15405-l",
+      "image": "https://www.gearbooker.com/images/listing/00041343.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 360,
+        "extraDayEUR": 280,
+        "weekEUR": 1800
+      },
+      "specs": {
+        "areaM2": 40,
+        "ceilingM": 3.8,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Afmetingen - Studiooppervlak: 4,7×3,7 meter (lxb) - Totale oppervlakte ruimte: 40m2 - Maximale hoogte ruimte: 3,8m - Licht Grid - 70×90 cm grid - Hoogte onder grid: 3,25 m Faciliteiten - Koffie/Thee - WiFi Overhead …"
+    },
+    {
+      "id": "gb-32586",
+      "slug": "film-foto-en-podcast-studio-te-huur-in-pijnacker-gb-32586",
+      "name": "Film- Foto en Podcast Studio te huur in Pijnacker",
+      "type": "foto",
+      "city": "Pijnacker",
+      "lng": 4.43702,
+      "lat": 52.01846,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-film--foto-en-podcast-studio-te-huur-in-pijnacker-in-pijnacker-32586-l",
+      "image": "https://www.gearbooker.com/images/listing/00087205.jpg",
+      "prices": {
+        "hourEUR": 120,
+        "firstDayEUR": 600,
+        "extraDayEUR": 420,
+        "weekEUR": 2940
+      },
+      "specs": {
+        "areaM2": 370,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": true,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Onze film/fotostudio is perfect uitgerust voor al jouw professionele producties. Wij bieden een ruime en goed verlichte studio van maar liefst 370 m² met een grote witte limbowand van 12 bij 8 meter en 5 meter hoog, …"
+    },
+    {
+      "id": "gb-15332",
+      "slug": "filmstudio-den-haag-limbowand-90m2-studio-230m2-totale-hal-l-gb-15332",
+      "name": "Filmstudio Den Haag | Limbowand | 90m2 studio | 230m2 totale hal | Laden&lossen roldeur 4m hoog",
+      "type": "foto",
+      "city": "Zoetermeer",
+      "lng": 4.49629,
+      "lat": 52.05979,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-filmstudio-den-haag-limbowand-90m2-studio-230m2-totale-hal-ladenlossen-roldeur-4-in-zoetermeer-15332-l",
+      "image": "https://www.gearbooker.com/images/listing/00041124.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 550,
+        "extraDayEUR": 385,
+        "weekEUR": 2695
+      },
+      "specs": {
+        "areaM2": 230,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": true,
+        "greenscreen": false,
+        "parking": true,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Kenmerken van video studio: - 6x6x4m limbo wand in 'L' vorm - Truss grid boven de opnamevloer - Akoestisch plafond - Zwarte gordijnen volledig rondom - 90m2 studio vloeroppervlakte in afgesloten dubbele wand ruimte - …"
+    },
+    {
+      "id": "gb-15923",
+      "slug": "complete-fotostudio-4-uur-bunnik-utrecht-6-min-vanaf-utrecht-gb-15923",
+      "name": "Complete Fotostudio 4 uur - Bunnik(Utrecht) (6 min vanaf Utrecht CS en langs de A12)",
+      "type": "foto",
+      "city": "Bunnik",
+      "lng": 5.22431,
+      "lat": 52.04155,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-complete-fotostudio-4-uur---bunnikutrecht-6-min-vanaf-utrecht-cs-en-langs-de-a12-in-bunnik-15923-l",
+      "image": "https://www.gearbooker.com/images/listing/00043021.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 125,
+        "extraDayEUR": 87.5,
+        "weekEUR": 612.5
+      },
+      "specs": {
+        "areaM2": 45,
+        "ceilingM": null,
+        "daylight": true,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": true,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Voor al je praktische shoots die niet afhankelijk zijn van een dure chique daglicht locatie ergens midden in een onbereikbaar centrum. Deze studio is praktisch en goed te bereiken. En daarom zeer interessant geprijsd!…"
+    },
+    {
+      "id": "gb-15924",
+      "slug": "complete-fotostudio-2-uur-bunnik-utrecht-6-min-vanaf-utrecht-gb-15924",
+      "name": "Complete Fotostudio 2 uur - Bunnik(Utrecht) (6 min vanaf Utrecht CS en langs de A12)",
+      "type": "foto",
+      "city": "Bunnik",
+      "lng": 5.21659,
+      "lat": 52.04063,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-complete-fotostudio-2-uur---bunnikutrecht-6-min-vanaf-utrecht-cs-en-langs-de-a12-in-bunnik-15924-l",
+      "image": "https://www.gearbooker.com/images/listing/00043022.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 95,
+        "extraDayEUR": 66.5,
+        "weekEUR": 465.5
+      },
+      "specs": {
+        "areaM2": 45,
+        "ceilingM": null,
+        "daylight": true,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": true,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Voor al je praktische shoots die niet afhankelijk zijn van een dure chique daglicht locatie ergens midden in een onbereikbaar centrum. Deze studio is praktisch en goed te bereiken. En daarom zeer interessant geprijsd!…"
+    },
+    {
+      "id": "gb-3424",
+      "slug": "complete-fotostudio-8-uur-bunnik-utrecht-6-min-vanaf-utrecht-gb-3424",
+      "name": "Complete Fotostudio 8 uur - Bunnik(Utrecht) (6 min vanaf Utrecht CS en langs de A12)",
+      "type": "foto",
+      "city": "Bunnik",
+      "lng": 5.22361,
+      "lat": 52.04081,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-complete-fotostudio-8-uur---bunnikutrecht-6-min-vanaf-utrecht-cs-en-langs-de-a12-in-bunnik-3424-l",
+      "image": "https://www.gearbooker.com/images/listing/00043020.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 215,
+        "extraDayEUR": 150.5,
+        "weekEUR": 1053.5
+      },
+      "specs": {
+        "areaM2": 45,
+        "ceilingM": null,
+        "daylight": true,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": true,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Voor al je praktische shoots die niet afhankelijk zijn van een dure chique daglicht locatie ergens midden in een onbereikbaar centrum. Deze studio is praktisch en goed te bereiken. En daarom zeer interessant geprijsd!…"
+    },
+    {
+      "id": "gb-30583",
+      "slug": "studio-op-t-film-studio-gb-30583",
+      "name": "Studio op T - Film studio",
+      "type": "foto",
+      "city": "Eindhoven",
+      "lng": 5.46925,
+      "lat": 51.44176,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-studio-op-t---film-studio-in-eindhoven-30583-l",
+      "image": "https://www.gearbooker.com/images/listing/00081030.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 1500,
+        "extraDayEUR": 1249,
+        "weekEUR": 70000
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Ontdek Studio T by SoMMedia, jouw ideale filmstudio in Eindhoven voor het realiseren van creatieve visies en hoogwaardige producties. Gelegen in een inspirerende omgeving, bieden wij faciliteiten voor filmopnames, liv…"
+    },
     {
       "id": "gb-1567",
       "slug": "fotostudio-360-graden-xl-voor-360-graden-foto-s-en-video-s-gb-1567",
@@ -29,6 +261,35 @@
       },
       "source": "gearbooker",
       "desc": "Onze FOTO360XL-studio biedt de mogelijkheid om binnen enkele minuten een object volledig vast te leggen. Om ze daarna interactief te kunnen roteren, kantelen en inzoomen! Auto’s, motoren, banken, koelkasten, maar ook …"
+    },
+    {
+      "id": "gb-3728",
+      "slug": "exversa-production-film-studio-foto-studio-strijp-s-eindhove-gb-3728",
+      "name": "Exversa Production Film Studio | Foto Studio - Strijp-S, Eindhoven",
+      "type": "foto",
+      "city": "Eindhoven",
+      "lng": 5.47203,
+      "lat": 51.44297,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-exversa-production-film-studio-foto-studio---strijp-s-eindhoven-in-eindhoven-3728-l",
+      "image": "https://www.gearbooker.com/images/listing/00008873.jpg",
+      "prices": {
+        "hourEUR": 75,
+        "firstDayEUR": 369,
+        "extraDayEUR": 369,
+        "weekEUR": 1808
+      },
+      "specs": {
+        "areaM2": 50,
+        "ceilingM": 3,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Exversa Prodoction Fotostudio / Filmstudio - Strijp-S, Eindhoven Perfecte ruimte van 50m2 voor zowel fotografie als film werk. Plafondhoogte is 3 meter en het achtergrond systeem van 2,75 meter is tot 5 meter diep te…"
     },
     {
       "id": "gb-1846",
@@ -87,6 +348,64 @@
       },
       "source": "gearbooker",
       "desc": "Technische specificaties: Studio afmetingen: 14x7 meter Projectiescherm: 3,40m x 10m aan de muur en 8,50m bij 6,50m vloerprojectie Green screen: 3,40m x 8,50m Beamer: Panasonic PTDZ870EK Motion Capture-systeem Zestie…"
+    },
+    {
+      "id": "gb-33726",
+      "slug": "young-rental-studio-1-gb-33726",
+      "name": "YOUNG RENTAL STUDIO 1",
+      "type": "foto",
+      "city": "Heeze",
+      "lng": 5.57222,
+      "lat": 51.38559,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-young-rental-studio-1-in-heeze-33726-l",
+      "image": "https://www.gearbooker.com/images/listing/00091612.jpg",
+      "prices": {
+        "hourEUR": 60,
+        "firstDayEUR": 480,
+        "extraDayEUR": 480,
+        "weekEUR": 2400
+      },
+      "specs": {
+        "areaM2": 220,
+        "ceilingM": 5.5,
+        "daylight": false,
+        "cyclorama": true,
+        "greenscreen": false,
+        "parking": true,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Welkom bij onze professionele foto-en videoproductie studio. Of je nu een ambitieuze filmmaker, content creator, reclamebureau of bedrijf bent, onze studio biedt de perfecte setting om hoogwaardige video content te pr…"
+    },
+    {
+      "id": "gb-33727",
+      "slug": "young-rental-studio-2-gb-33727",
+      "name": "YOUNG RENTAL STUDIO 2",
+      "type": "foto",
+      "city": "Heeze",
+      "lng": 5.56879,
+      "lat": 51.3819,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-young-rental-studio-2-in-heeze-33727-l",
+      "image": "https://www.gearbooker.com/images/listing/00091610.jpg",
+      "prices": {
+        "hourEUR": 25,
+        "firstDayEUR": 200,
+        "extraDayEUR": 200,
+        "weekEUR": 1000
+      },
+      "specs": {
+        "areaM2": 30,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Camera apparatuur en accesoires kopen of huren kan duur uitvallen voor beginnende maar ook voor professionele fotografen. Met de opname studio van Young Productions bent u in een keer van alle gemakken voorzien. een c…"
     },
     {
       "id": "gb-2366",
@@ -176,35 +495,6 @@
       "desc": "Filmstudio huren? Met onze limbowand van 5 bij 5 bij 8 meter zijn wij dé studio in omgeving Rotterdam voor uw droomproductie. Tegen scherpe tarieven bieden wij u een filmstudio waarin alles mogelijk is. Maak uw filmpr…"
     },
     {
-      "id": "gb-3424",
-      "slug": "complete-fotostudio-8-uur-bunnik-utrecht-6-min-vanaf-utrecht-gb-3424",
-      "name": "Complete Fotostudio 8 uur - Bunnik(Utrecht) (6 min vanaf Utrecht CS en langs de A12)",
-      "type": "foto",
-      "city": "Bunnik",
-      "lng": 5.22361,
-      "lat": 52.04081,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-complete-fotostudio-8-uur---bunnikutrecht-6-min-vanaf-utrecht-cs-en-langs-de-a12-in-bunnik-3424-l",
-      "image": "https://www.gearbooker.com/images/listing/00043020.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 215,
-        "extraDayEUR": 150.5,
-        "weekEUR": 1053.5
-      },
-      "specs": {
-        "areaM2": 45,
-        "ceilingM": null,
-        "daylight": true,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": true,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Voor al je praktische shoots die niet afhankelijk zijn van een dure chique daglicht locatie ergens midden in een onbereikbaar centrum. Deze studio is praktisch en goed te bereiken. En daarom zeer interessant geprijsd!…"
-    },
-    {
       "id": "gb-3710",
       "slug": "fotostudio-gb-3710",
       "name": "Fotostudio",
@@ -232,35 +522,6 @@
       },
       "source": "gearbooker",
       "desc": "LightVaultStudio is a well-equipped photo studio located in Asse, Belgium, offering rental space for various types of photography, from portraits to product shoots. The studio features a 6-meter wide limbo wall, profe…"
-    },
-    {
-      "id": "gb-3728",
-      "slug": "exversa-production-film-studio-foto-studio-strijp-s-eindhove-gb-3728",
-      "name": "Exversa Production Film Studio | Foto Studio - Strijp-S, Eindhoven",
-      "type": "foto",
-      "city": "Eindhoven",
-      "lng": 5.47203,
-      "lat": 51.44297,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-exversa-production-film-studio-foto-studio---strijp-s-eindhoven-in-eindhoven-3728-l",
-      "image": "https://www.gearbooker.com/images/listing/00008873.jpg",
-      "prices": {
-        "hourEUR": 75,
-        "firstDayEUR": 369,
-        "extraDayEUR": 369,
-        "weekEUR": 1808
-      },
-      "specs": {
-        "areaM2": 50,
-        "ceilingM": 3,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Exversa Prodoction Fotostudio / Filmstudio - Strijp-S, Eindhoven Perfecte ruimte van 50m2 voor zowel fotografie als film werk. Plafondhoogte is 3 meter en het achtergrond systeem van 2,75 meter is tot 5 meter diep te…"
     },
     {
       "id": "gb-3834",
@@ -321,6 +582,64 @@
       "desc": "Professionele Fotografie en Filmstudio, met RGB color wand verlichting. Filmstudio Nijmegen is ontstaan vanuit cinematografisch oogpunt. Als TV, film en video productiemaatschappij produceren wij nationale alsook int…"
     },
     {
+      "id": "gb-43371",
+      "slug": "fotostudio-gb-43371",
+      "name": "fotostudio",
+      "type": "foto",
+      "city": "Eindhoven",
+      "lng": 5.47412,
+      "lat": 51.44213,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-fotostudio-in-eindhoven-43371-l",
+      "image": "https://www.gearbooker.com/images/listing/00115975.jpg",
+      "prices": {
+        "hourEUR": 90,
+        "firstDayEUR": 450,
+        "extraDayEUR": 315,
+        "weekEUR": 2205
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Our photo studio is the ideal space for photographers, videographers, content creators, and brands looking for quality and flexibility. The studio is spacious, bright, and fully equipped with professional lighting, ba…"
+    },
+    {
+      "id": "gb-12975",
+      "slug": "livestream-studio-rotterdam-gb-12975",
+      "name": "Livestream Studio Rotterdam",
+      "type": "foto",
+      "city": "Rotterdam",
+      "lng": 4.47333,
+      "lat": 51.9271,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-livestream-studio-rotterdam-in-rotterdam-12975-l",
+      "image": "https://www.gearbooker.com/images/listing/00033806.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 1500,
+        "extraDayEUR": 1250,
+        "weekEUR": 7350
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": true,
+        "parking": true,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Ruime, veelzijdige studio met glasvezel aansluiting en lichtplafond. Basis inrichting: Tientallen tafeltjes waarmee je iedere opstelling kunt bouwen Voldoende stoelen om 50 mensen te laten zitten Katheder Goedkope, r…"
+    },
+    {
       "id": "gb-5737",
       "slug": "foto-en-filmstudio-centrum-leeuwarden-gb-5737",
       "name": "foto en filmstudio centrum Leeuwarden",
@@ -348,6 +667,122 @@
       },
       "source": "gearbooker",
       "desc": "Wil je een foto of filmstudio huren in het Noorden? Dan bieden wij onze ruimte beschikbaar in hartje Leeuwarden. Gevestigd in de Blokhuispoort heb je beschikking tot 50m2 studioruimte met toegang tot keuken en afgeslo…"
+    },
+    {
+      "id": "gb-41237",
+      "slug": "videografie-assistent-optioneel-bij-huur-fotostudio-colorwoo-gb-41237",
+      "name": "Videografie assistent | optioneel bij huur Fotostudio Colorwood Photo | www.colorwood.nl/studio",
+      "type": "foto",
+      "city": "Waddinxveen",
+      "lng": 4.65974,
+      "lat": 52.04255,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-videografie-assistent-optioneel-bij-huur-fotostudio-colorwood-photo-wwwcolorwood-in-waddinxveen-41237-l",
+      "image": "https://www.gearbooker.com/images/listing/00109606.jpg",
+      "prices": {
+        "hourEUR": 155,
+        "firstDayEUR": 1200,
+        "extraDayEUR": 1200,
+        "weekEUR": 6000
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": true,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Bij huur van Fotostudio Colorwood is het mogelijk om een ervaren videografie-assistent bij te boeken. Om je shoot soepel en zorgeloos te laten verlopen, helpt hij je met het maken van de lichtopstellingen en je camera…"
+    },
+    {
+      "id": "gb-41239",
+      "slug": "fotografie-assistent-optioneel-bij-huur-fotostudio-colorwood-gb-41239",
+      "name": "Fotografie assistent | optioneel bij huur Fotostudio Colorwood Photo | www.colorwood.nl/studio",
+      "type": "foto",
+      "city": "Waddinxveen",
+      "lng": 4.65803,
+      "lat": 52.04349,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-fotografie-assistent-optioneel-bij-huur-fotostudio-colorwood-photo-wwwcolorwoodn-in-waddinxveen-41239-l",
+      "image": "https://www.gearbooker.com/images/listing/00109612.jpg",
+      "prices": {
+        "hourEUR": 155,
+        "firstDayEUR": 1200,
+        "extraDayEUR": 1200,
+        "weekEUR": 6000
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": true,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Bij huur van Fotostudio Colorwood is het mogelijk om een ervaren fotografie-assistent bij te boeken. Om je shoot soepel en zorgeloos te laten verlopen, helpt hij je met het maken van de lichtopstellingen en je camera-…"
+    },
+    {
+      "id": "gb-41277",
+      "slug": "verhuur-halve-dag-fotostudio-colorwood-www-colorwood-nl-gb-41277",
+      "name": "Verhuur (halve dag) Fotostudio Colorwood | www.colorwood.nl",
+      "type": "foto",
+      "city": "Waddinxveen",
+      "lng": 4.65654,
+      "lat": 52.0457,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-verhuur-halve-dag-fotostudio-colorwood-wwwcolorwoodnl-in-waddinxveen-41277-l",
+      "image": "https://www.gearbooker.com/images/listing/00109721.jpg",
+      "prices": {
+        "hourEUR": 55,
+        "firstDayEUR": 275,
+        "extraDayEUR": 192.5,
+        "weekEUR": 1347.5
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": true,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "FOTOSTUDIO COLORWOOD PHOTO | WADDINXVEEN | WWW.COLORWOOD.NL/STUDIO Halve dag (4 uur, 9:00-13:00 uur of 13:00-17:00 uur) Op zoek naar een locatie om jouw professionele productie te draaien? Onze fotostudio in Waddinxv…"
+    },
+    {
+      "id": "gb-29146",
+      "slug": "verhuur-hele-dag-fotostudio-colorwood-www-colorwood-nl-gb-29146",
+      "name": "Verhuur (hele dag) Fotostudio Colorwood | www.colorwood.nl",
+      "type": "foto",
+      "city": "Waddinxveen",
+      "lng": 4.65782,
+      "lat": 52.04219,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-verhuur-hele-dag-fotostudio-colorwood-wwwcolorwoodnl-in-waddinxveen-29146-l",
+      "image": "https://www.gearbooker.com/images/listing/00090553.jpg",
+      "prices": {
+        "hourEUR": 99,
+        "firstDayEUR": 495,
+        "extraDayEUR": 346.5,
+        "weekEUR": 2425.5
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": true,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "FOTOSTUDIO COLORWOOD PHOTO | WADDINXVEEN | WWW.COLORWOOD.NL/STUDIO Hele dag (09:00-17:00 uur) Op zoek naar een locatie om jouw professionele productie te draaien? Onze fotostudio in Waddinxveen is te huur per halve, …"
     },
     {
       "id": "gb-6037",
@@ -408,6 +843,180 @@
       "desc": "Mooie foto film studio met Limbo Green, Black & White Met 3 studio lampen en leds boven de doeken. Tevens is er een vrij bureau met beelschermen om aan te werken #FlexPlek We zijn een vrij media kantoor."
     },
     {
+      "id": "gb-6531",
+      "slug": "industriele-foto-video-studio-gb-6531",
+      "name": "industriële foto / video studio",
+      "type": "foto",
+      "city": "Zwijndrecht",
+      "lng": 4.64316,
+      "lat": 51.81748,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-industriele-foto-video-studio-in-zwijndrecht-6531-l",
+      "image": "https://www.gearbooker.com/images/listing/00016642.jpg",
+      "prices": {
+        "hourEUR": 50,
+        "firstDayEUR": 250,
+        "extraDayEUR": 175,
+        "weekEUR": 1225
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Van fotoshoots tot interviews niks is te gek in onze compacte sfeervolle studio, een ruimte waar gewerkt kan worden maar waar je ook tot rust komt. Naast de aangegeven faciliteiten is er ook beschikking tot : - 43 i…"
+    },
+    {
+      "id": "gb-9826",
+      "slug": "motion-capture-suite-motion-capture-studio-gb-9826",
+      "name": "Motion capture suite / motion capture studio",
+      "type": "foto",
+      "city": "Rotterdam",
+      "lng": 4.48207,
+      "lat": 51.92612,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-motion-capture-suite-motion-capture-studio-in-rotterdam-9826-l",
+      "image": "https://www.gearbooker.com/images/listing/00025195.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 150,
+        "extraDayEUR": 105,
+        "weekEUR": 735
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Een volwaardige motion capture studio, waardoor het voor onze klanten een stuk eenvoudiger en goedkoper wordt om 3D karakters te laten bewegen. Het is eveneens mogelijk om voor een zeer aantrekkelijk tarief het MoCap-…"
+    },
+    {
+      "id": "gb-14674",
+      "slug": "foto-film-studio-90m-werkendam-noord-brabant-zuid-holland-gb-14674",
+      "name": "Foto & Film Studio 90m² | Werkendam (Noord-Brabant / Zuid-Holland)",
+      "type": "foto",
+      "city": "Werkendam",
+      "lng": 4.89714,
+      "lat": 51.81011,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-foto-film-studio-90m-werkendam-noord-brabant-zuid-holland-in-werkendam-14674-l",
+      "image": "https://www.gearbooker.com/images/listing/00039071.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 450,
+        "extraDayEUR": 450,
+        "weekEUR": 2205
+      },
+      "specs": {
+        "areaM2": 90,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": true,
+        "greenscreen": true,
+        "parking": true,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Deze veelzijdige ruimte is perfect voor een breed scala aan producties, zoals commercials, product explainers of social content. Maar uiteraard is het ook mogelijk om podcasts op te nemen, webinars te organiseren en n…"
+    },
+    {
+      "id": "gb-41616",
+      "slug": "photo-studio-gb-41616",
+      "name": "Photo Studio",
+      "type": "foto",
+      "city": "Utrecht",
+      "lng": 5.12454,
+      "lat": 52.08988,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-photo-studio-in-utrecht-41616-l",
+      "image": "https://www.gearbooker.com/images/listing/00110732.jpg",
+      "prices": {
+        "hourEUR": 75,
+        "firstDayEUR": 450,
+        "extraDayEUR": 315,
+        "weekEUR": 2205
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Pepeditss bied een veelzijdige, flexibele studioruimte aan met oneindig veel mogelijkheden! Portret fotografie, videoproducties, Interviews, product fotografie, fashion-video’s of een podcasts, onze studio is ontworpe…"
+    },
+    {
+      "id": "gb-8370",
+      "slug": "unieke-fotolocatie-in-oude-fabriek-gb-8370",
+      "name": "Unieke fotolocatie in oude fabriek",
+      "type": "foto",
+      "city": "Wergea",
+      "lng": 5.84499,
+      "lat": 53.15245,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-unieke-fotolocatie-in-oude-fabriek-in-wergea-8370-l",
+      "image": "https://www.gearbooker.com/images/listing/00021670.jpg",
+      "prices": {
+        "hourEUR": 50,
+        "firstDayEUR": 250,
+        "extraDayEUR": 175,
+        "weekEUR": 1225
+      },
+      "specs": {
+        "areaM2": 170,
+        "ceilingM": null,
+        "daylight": true,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": true,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "In De Fabriek hebben we verschillende ruimtes die huiselijk en sfeervol zijn ingericht en ideaal zijn als fotolocatie voor fotoshoots. Onze living van 170m2 is eigentijds ingericht en zeer geschikt voor lifestyle foto…"
+    },
+    {
+      "id": "gb-10063",
+      "slug": "foto-film-studio-gb-10063",
+      "name": "Foto- Film Studio",
+      "type": "foto",
+      "city": "Assendelft",
+      "lng": 4.75346,
+      "lat": 52.48792,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-foto--film-studio-in-assendelft-10063-l",
+      "image": "https://www.gearbooker.com/images/listing/00025844.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 300,
+        "extraDayEUR": 250,
+        "weekEUR": 1470
+      },
+      "specs": {
+        "areaM2": 60,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Onze fotostudio is nu voor iedereen beschikbaar! Boek via Gearbooker of onze website. Onze studio bestaat uit een ruimte van 60m2 waar de koffie, thee en water gratis is. De kleedruimte en visagie kan worden afgescher…"
+    },
+    {
       "id": "gb-10064",
       "slug": "foto-film-studio-gb-10064",
       "name": "Foto- Film Studio",
@@ -466,35 +1075,6 @@
       "desc": "De Moor Studios beschikt over een professionele greenscreen studio. Onze greenscreen is 6m breed, 3m diep en 3m hoog . Uiteraard zijn er bij langere periodes substantiële kortingen van toepassing."
     },
     {
-      "id": "gb-10991",
-      "slug": "videostudio-in-utrecht-gb-10991",
-      "name": "Videostudio in Utrecht",
-      "type": "foto",
-      "city": "Utrecht",
-      "lng": 5.12168,
-      "lat": 52.08808,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-videostudio-in-utrecht-in-utrecht-10991-l",
-      "image": "https://www.gearbooker.com/images/listing/00028451.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 300,
-        "extraDayEUR": 250,
-        "weekEUR": 1500
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Wij bieden een efficiënte en betaalbare all-inclusive samenwerking om binnen een week professionele video’s te realiseren die perfect geschikt zijn voor jouw sociale media of online marketing. De locatie ligt centraal…"
-    },
-    {
       "id": "gb-11352",
       "slug": "film-foto-studio-wijchen-nijmegen-gb-11352",
       "name": "Film & Foto Studio Wijchen (Nijmegen)",
@@ -522,6 +1102,35 @@
       },
       "source": "gearbooker",
       "desc": "Wij van De Moor hebben de afgelopen tijd veel geïnvesteerd in onze vernieuwde Film studio, ook hebben we veel ervaring met het bouwen van decors. Bekijk de foto’s en onze website www.demoorstudios.nl voor meer info. O…"
+    },
+    {
+      "id": "gb-10991",
+      "slug": "videostudio-in-utrecht-gb-10991",
+      "name": "Videostudio in Utrecht",
+      "type": "foto",
+      "city": "Utrecht",
+      "lng": 5.12168,
+      "lat": 52.08808,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-videostudio-in-utrecht-in-utrecht-10991-l",
+      "image": "https://www.gearbooker.com/images/listing/00028451.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 300,
+        "extraDayEUR": 250,
+        "weekEUR": 1500
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Wij bieden een efficiënte en betaalbare all-inclusive samenwerking om binnen een week professionele video’s te realiseren die perfect geschikt zijn voor jouw sociale media of online marketing. De locatie ligt centraal…"
     },
     {
       "id": "gb-11376",
@@ -553,33 +1162,33 @@
       "desc": "Photostudio near Amsterdam (15 min) White infinitywall 4x5 Always 10 colours backdrop Concrete Retro Wall with old paint and Chesterfield in front Large overhead door for easy unloading Elinchrom ELB 500 (4x) Elinch…"
     },
     {
-      "id": "gb-11421",
-      "slug": "studio-green-key-fond-vert-bruxelles-streaming-live-multicam-gb-11421",
-      "name": "Studio green key fond vert bruxelles streaming live multicam virtual studio captation",
+      "id": "gb-13347",
+      "slug": "cyclorama-studio-den-haag-incl-belichting-gratis-parkeren-gb-13347",
+      "name": "Cyclorama Studio Den Haag (incl. belichting & gratis parkeren)",
       "type": "foto",
-      "city": "Saint Gilles",
-      "lng": 4.34579,
-      "lat": 50.82297,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-studio-green-key-fond-vert-bruxelles-streaming-live-multicam-virtual-studio-capt-in-saint-gilles-11421-l",
-      "image": "https://www.gearbooker.com/images/listing/00029687.jpg",
+      "city": "Den Haag",
+      "lng": 4.30445,
+      "lat": 52.06935,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-cyclorama-studio-den-haag-incl-belichting-gratis-parkeren-in-den-haag-13347-l",
+      "image": "https://www.gearbooker.com/images/listing/00034782.jpg",
       "prices": {
-        "hourEUR": 55,
-        "firstDayEUR": 299,
-        "extraDayEUR": 299,
-        "weekEUR": 1465
+        "hourEUR": null,
+        "firstDayEUR": 250,
+        "extraDayEUR": 175,
+        "weekEUR": 1225
       },
       "specs": {
-        "areaM2": 80,
+        "areaM2": 45,
         "ceilingM": null,
         "daylight": false,
         "cyclorama": true,
-        "greenscreen": true,
-        "parking": false,
+        "greenscreen": false,
+        "parking": true,
         "powerHeavy": false,
         "blackout": false
       },
       "source": "gearbooker",
-      "desc": "NeoStudio.be est spécifiquement construit et équipé pour une captation vidéo fond vert/green Key de qualité maximale : (possible de louer par demi jour ) Nous pouvons vous rendre service : Streaming live/diffusion e…"
+      "desc": "Ben je opzoek naar een foto studio voor het maken van een videoclip of het organiseren van een fotoshoot? Dan is de frontyard studio echt iets voor jou! Deze studio is los te huur of in combinatie met volledig verzorg…"
     },
     {
       "id": "gb-12090",
@@ -756,35 +1365,6 @@
       "desc": "SPECIFICATIES Onze studio beschikt over een greenscreen van 6 meter breed, 4 meter hoog en 5 meter diep. Met hoogwaardige belichting en een cameraset-up van Black Magic beschikken we over een krachtige combinatie om v…"
     },
     {
-      "id": "gb-12975",
-      "slug": "livestream-studio-rotterdam-gb-12975",
-      "name": "Livestream Studio Rotterdam",
-      "type": "foto",
-      "city": "Rotterdam",
-      "lng": 4.47333,
-      "lat": 51.9271,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-livestream-studio-rotterdam-in-rotterdam-12975-l",
-      "image": "https://www.gearbooker.com/images/listing/00033806.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 1500,
-        "extraDayEUR": 1250,
-        "weekEUR": 7350
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": true,
-        "parking": true,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Ruime, veelzijdige studio met glasvezel aansluiting en lichtplafond. Basis inrichting: Tientallen tafeltjes waarmee je iedere opstelling kunt bouwen Voldoende stoelen om 50 mensen te laten zitten Katheder Goedkope, r…"
-    },
-    {
       "id": "gb-13178",
       "slug": "fotostudio-gb-13178",
       "name": "Fotostudio",
@@ -812,35 +1392,6 @@
       },
       "source": "gearbooker",
       "desc": "De studio is 70m2 en heeft verschillende dropdown backgrounds. Er zijn 8 flitsers met verschillende lichtomvormers aanwezig en ook een produkt opnametafel."
-    },
-    {
-      "id": "gb-13347",
-      "slug": "cyclorama-studio-den-haag-incl-belichting-gratis-parkeren-gb-13347",
-      "name": "Cyclorama Studio Den Haag (incl. belichting & gratis parkeren)",
-      "type": "foto",
-      "city": "Den Haag",
-      "lng": 4.30445,
-      "lat": 52.06935,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-cyclorama-studio-den-haag-incl-belichting-gratis-parkeren-in-den-haag-13347-l",
-      "image": "https://www.gearbooker.com/images/listing/00034782.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 250,
-        "extraDayEUR": 175,
-        "weekEUR": 1225
-      },
-      "specs": {
-        "areaM2": 45,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": true,
-        "greenscreen": false,
-        "parking": true,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Ben je opzoek naar een foto studio voor het maken van een videoclip of het organiseren van een fotoshoot? Dan is de frontyard studio echt iets voor jou! Deze studio is los te huur of in combinatie met volledig verzorg…"
     },
     {
       "id": "gb-13477",
@@ -872,35 +1423,6 @@
       "desc": "90m2 aan studio ruimte. Een witte ruimte van 30m2 ingericht met props en meubels met overwegend leer en chrome met karakteristieke herenhuis ramen. Aansluitend aan deze ruimte zit een ruimte van 60m2 die wij ''de brui…"
     },
     {
-      "id": "gb-13825",
-      "slug": "foto-filmstudio-hooghiemstraplein-utrecht-gb-13825",
-      "name": "Foto- / Filmstudio Hooghiemstraplein Utrecht",
-      "type": "foto",
-      "city": "Utrecht",
-      "lng": 5.12072,
-      "lat": 52.09333,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-foto--filmstudio-hooghiemstraplein-utrecht-in-utrecht-13825-l",
-      "image": "https://www.gearbooker.com/images/listing/00036099.jpg",
-      "prices": {
-        "hourEUR": 250,
-        "firstDayEUR": 475,
-        "extraDayEUR": 475,
-        "weekEUR": 2327.5
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": true,
-        "parking": true,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Op een prachtige locatie aan de singel in het Griftpark ligt Utrechts gloednieuwe multifunctionele foto- en videostudio: 030.Studio. De studio is geschikt voor kleine tot middelgrote videoproducties en fotografie en v…"
-    },
-    {
       "id": "gb-13848",
       "slug": "selinni-fotostudio-in-onze-woonwinkel-in-joure-maak-vette-fo-gb-13848",
       "name": "SELINNI - Fotostudio in onze woonwinkel in Joure / Maak VETTE FOTO'S in onze ingerichte stijlstudios - FOTOSTUDIO FRIESLAND",
@@ -930,6 +1452,35 @@
       "desc": "Maak VETTE FOTO'S in 1 of meerdere van onze stijlstudio's van onze winkel Selinni wonen in Joure (2000 m2) Of richt je eigen studio in door gebruik te maken van alle aanwezige items in onze winkel. Aan de voorkant van…"
     },
     {
+      "id": "gb-13825",
+      "slug": "foto-filmstudio-hooghiemstraplein-utrecht-gb-13825",
+      "name": "Foto- / Filmstudio Hooghiemstraplein Utrecht",
+      "type": "foto",
+      "city": "Utrecht",
+      "lng": 5.12072,
+      "lat": 52.09333,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-foto--filmstudio-hooghiemstraplein-utrecht-in-utrecht-13825-l",
+      "image": "https://www.gearbooker.com/images/listing/00036099.jpg",
+      "prices": {
+        "hourEUR": 250,
+        "firstDayEUR": 475,
+        "extraDayEUR": 475,
+        "weekEUR": 2327.5
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": true,
+        "parking": true,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Op een prachtige locatie aan de singel in het Griftpark ligt Utrechts gloednieuwe multifunctionele foto- en videostudio: 030.Studio. De studio is geschikt voor kleine tot middelgrote videoproducties en fotografie en v…"
+    },
+    {
       "id": "gb-13944",
       "slug": "studio-700m2-gb-13944",
       "name": "Studio 700m2",
@@ -957,122 +1508,6 @@
       },
       "source": "gearbooker",
       "desc": "Unigate Filmstudio: - Vlakbij centrum Antwerpen & op/afrit autostrade - 700m2 - 6 afzonderlijke set's - Cyc-wall - Green screen - Back-drops - Gelegen in oud pakhuis - Opname materiaal beschikbaar - Keuken, WC, verga…"
-    },
-    {
-      "id": "gb-14056",
-      "slug": "complete-daglicht-en-fotostudio-60m2-inclusief-interieur-lam-gb-14056",
-      "name": "Complete daglicht en fotostudio 60m2 inclusief interieur, lampen, props en achtergronden",
-      "type": "foto",
-      "city": "Rotterdam",
-      "lng": 4.47479,
-      "lat": 51.92598,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-complete-daglicht-en-fotostudio-60m2-inclusief-interieur-lampen-props-en-achterg-in-rotterdam-14056-l",
-      "image": "https://www.gearbooker.com/images/listing/00075283.jpg",
-      "prices": {
-        "hourEUR": 110,
-        "firstDayEUR": 549,
-        "extraDayEUR": 384.5,
-        "weekEUR": 2690
-      },
-      "specs": {
-        "areaM2": 60,
-        "ceilingM": null,
-        "daylight": true,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": true
-      },
-      "source": "gearbooker",
-      "desc": "Ontdek The Content Studio: dé perfecte plek voor het huren van een daglichtfotostudio, vergaderlocatie, evenementenruimte en workshoplocatie in Rotterdam! Gelegen in het hart van Rotterdam Delfshaven aan de Maas, bied…"
-    },
-    {
-      "id": "gb-14327",
-      "slug": "timechamber-fotostudio-gb-14327",
-      "name": "Timechamber Fotostudio",
-      "type": "foto",
-      "city": "Ranst",
-      "lng": 4.56334,
-      "lat": 51.18863,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-timechamber-fotostudio-in-ranst-14327-l",
-      "image": "https://www.gearbooker.com/images/listing/00037597.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 320,
-        "extraDayEUR": 224,
-        "weekEUR": 1568
-      },
-      "specs": {
-        "areaM2": 55,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Complete fotostudio (55m²) gelegen in Ranst. Soft boxen in begrepen. Verschillende backdrops aanwezig in volgende kleuren: wit, zwart, blauw, groen, bordeaux. Huur Sony A7 camera is optioneel (betalend)"
-    },
-    {
-      "id": "gb-14420",
-      "slug": "timechamber-infinity-wall-gb-14420",
-      "name": "Timechamber Infinity wall",
-      "type": "foto",
-      "city": "Ranst",
-      "lng": 4.56366,
-      "lat": 51.18968,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-timechamber-infinity-wall-in-ranst-14420-l",
-      "image": "https://www.gearbooker.com/images/listing/00038071.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 750,
-        "extraDayEUR": 525,
-        "weekEUR": 3675
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": true,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Een studio met een infinity wall geeft de fotograaf of content creator eindeloos veel mogelijkheden in het positioneren van zijn of haar model of product. Door het gevoel van oneindigheid dankzij de hoek die gemaakt i…"
-    },
-    {
-      "id": "gb-14674",
-      "slug": "foto-film-studio-90m-werkendam-noord-brabant-zuid-holland-gb-14674",
-      "name": "Foto & Film Studio 90m² | Werkendam (Noord-Brabant / Zuid-Holland)",
-      "type": "foto",
-      "city": "Werkendam",
-      "lng": 4.89714,
-      "lat": 51.81011,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-foto-film-studio-90m-werkendam-noord-brabant-zuid-holland-in-werkendam-14674-l",
-      "image": "https://www.gearbooker.com/images/listing/00039071.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 450,
-        "extraDayEUR": 450,
-        "weekEUR": 2205
-      },
-      "specs": {
-        "areaM2": 90,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": true,
-        "greenscreen": true,
-        "parking": true,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Deze veelzijdige ruimte is perfect voor een breed scala aan producties, zoals commercials, product explainers of social content. Maar uiteraard is het ook mogelijk om podcasts op te nemen, webinars te organiseren en n…"
     },
     {
       "id": "gb-14926",
@@ -1133,35 +1568,6 @@
       "desc": "Studio Promotime is een volledig uitgeruste studio voor video en foto opdrachten. Grootte: 8m op 6m en 3,10m hoogte + inkom, sanitair en een functionele keuken die ook als kleedkamer en make-up ruimte kan dienen. Aan…"
     },
     {
-      "id": "gb-15332",
-      "slug": "filmstudio-den-haag-limbowand-90m2-studio-230m2-totale-hal-l-gb-15332",
-      "name": "Filmstudio Den Haag | Limbowand | 90m2 studio | 230m2 totale hal | Laden&lossen roldeur 4m hoog",
-      "type": "foto",
-      "city": "Zoetermeer",
-      "lng": 4.49629,
-      "lat": 52.05979,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-filmstudio-den-haag-limbowand-90m2-studio-230m2-totale-hal-ladenlossen-roldeur-4-in-zoetermeer-15332-l",
-      "image": "https://www.gearbooker.com/images/listing/00041124.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 550,
-        "extraDayEUR": 385,
-        "weekEUR": 2695
-      },
-      "specs": {
-        "areaM2": 230,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": true,
-        "greenscreen": false,
-        "parking": true,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Kenmerken van video studio: - 6x6x4m limbo wand in 'L' vorm - Truss grid boven de opnamevloer - Akoestisch plafond - Zwarte gordijnen volledig rondom - 90m2 studio vloeroppervlakte in afgesloten dubbele wand ruimte - …"
-    },
-    {
       "id": "gb-15400",
       "slug": "spacestudio-gb-15400",
       "name": "SPACEstudio",
@@ -1189,35 +1595,6 @@
       },
       "source": "gearbooker",
       "desc": "- Studio ± 130m2 witte cyclorama op 2 muurzijden in L-vorm van 11x12 meter met een hoogte van 4,6 meter. - Er zijn zwarte gordijnen die de witte wand volledig kunnen afdekken. (Black box) - Met 8 cyclorama LEDs RGB ka…"
-    },
-    {
-      "id": "gb-15405",
-      "slug": "foto-filmstudio-den-haag-40m2-gb-15405",
-      "name": "Foto - Filmstudio Den Haag // 40m2",
-      "type": "foto",
-      "city": "Den Haag",
-      "lng": 4.30088,
-      "lat": 52.07288,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-foto---filmstudio-den-haag-40m2-in-den-haag-15405-l",
-      "image": "https://www.gearbooker.com/images/listing/00041343.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 360,
-        "extraDayEUR": 280,
-        "weekEUR": 1800
-      },
-      "specs": {
-        "areaM2": 40,
-        "ceilingM": 3.8,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Afmetingen - Studiooppervlak: 4,7×3,7 meter (lxb) - Totale oppervlakte ruimte: 40m2 - Maximale hoogte ruimte: 3,8m - Licht Grid - 70×90 cm grid - Hoogte onder grid: 3,25 m Faciliteiten - Koffie/Thee - WiFi Overhead …"
     },
     {
       "id": "gb-15605",
@@ -1249,122 +1626,6 @@
       "desc": "Onze fotostudio is een professionele en betaalbare studio voor fotografie en film in Amsterdam op loopafstand van station Sloterdijk. De volledig ingerichte fotostudio leent zich perfect voor video opnames, fotoshoots…"
     },
     {
-      "id": "gb-15891",
-      "slug": "verhuur-livevideostudio-voor-webinars-ed-regie-techniek-gb-15891",
-      "name": "Verhuur livevideostudio voor webinars ed. + regie & techniek",
-      "type": "foto",
-      "city": "Veldhoven",
-      "lng": 5.40415,
-      "lat": 51.41923,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-verhuur-livevideostudio-voor-webinars-ed-regie-techniek-in-veldhoven-15891-l",
-      "image": "https://www.gearbooker.com/images/listing/00042893.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 336,
-        "extraDayEUR": 235,
-        "weekEUR": 1646.5
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Verhuur livevideostudio webinars ed. + regie met mogelijkheid tot uitzenden naar media (YouTube/Facebook/Zoom/Teams) of eigen server. 3 FULL-HD Canon Camera's, microfoons en voldoende lichtbakken. Meer info op: www.at…"
-    },
-    {
-      "id": "gb-15923",
-      "slug": "complete-fotostudio-4-uur-bunnik-utrecht-6-min-vanaf-utrecht-gb-15923",
-      "name": "Complete Fotostudio 4 uur - Bunnik(Utrecht) (6 min vanaf Utrecht CS en langs de A12)",
-      "type": "foto",
-      "city": "Bunnik",
-      "lng": 5.22431,
-      "lat": 52.04155,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-complete-fotostudio-4-uur---bunnikutrecht-6-min-vanaf-utrecht-cs-en-langs-de-a12-in-bunnik-15923-l",
-      "image": "https://www.gearbooker.com/images/listing/00043021.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 125,
-        "extraDayEUR": 87.5,
-        "weekEUR": 612.5
-      },
-      "specs": {
-        "areaM2": 45,
-        "ceilingM": null,
-        "daylight": true,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": true,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Voor al je praktische shoots die niet afhankelijk zijn van een dure chique daglicht locatie ergens midden in een onbereikbaar centrum. Deze studio is praktisch en goed te bereiken. En daarom zeer interessant geprijsd!…"
-    },
-    {
-      "id": "gb-15924",
-      "slug": "complete-fotostudio-2-uur-bunnik-utrecht-6-min-vanaf-utrecht-gb-15924",
-      "name": "Complete Fotostudio 2 uur - Bunnik(Utrecht) (6 min vanaf Utrecht CS en langs de A12)",
-      "type": "foto",
-      "city": "Bunnik",
-      "lng": 5.21659,
-      "lat": 52.04063,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-complete-fotostudio-2-uur---bunnikutrecht-6-min-vanaf-utrecht-cs-en-langs-de-a12-in-bunnik-15924-l",
-      "image": "https://www.gearbooker.com/images/listing/00043022.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 95,
-        "extraDayEUR": 66.5,
-        "weekEUR": 465.5
-      },
-      "specs": {
-        "areaM2": 45,
-        "ceilingM": null,
-        "daylight": true,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": true,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Voor al je praktische shoots die niet afhankelijk zijn van een dure chique daglicht locatie ergens midden in een onbereikbaar centrum. Deze studio is praktisch en goed te bereiken. En daarom zeer interessant geprijsd!…"
-    },
-    {
-      "id": "gb-16050",
-      "slug": "film-foto-studio-gb-16050",
-      "name": "Film Foto Studio",
-      "type": "foto",
-      "city": "Rotterdam",
-      "lng": 4.48008,
-      "lat": 51.92158,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-film-foto-studio-in-rotterdam-16050-l",
-      "image": "https://www.gearbooker.com/images/listing/00043260.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 250,
-        "extraDayEUR": 225,
-        "weekEUR": 1225
-      },
-      "specs": {
-        "areaM2": 100,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "English: Welcome to our FilmFoto Studio located in Rotterdam, in the district of Delfshaven. We offer a large 100 square meter space that is well-suited for a wide range of film and photography projects. Additionally,…"
-    },
-    {
       "id": "gb-16353",
       "slug": "voordelig-professionele-fotostudio-huren-200m2-gb-16353",
       "name": "Voordelig professionele fotostudio huren 200m2 (",
@@ -1392,35 +1653,6 @@
       },
       "source": "gearbooker",
       "desc": "De fotostudio heeft (inclusief visagieruimte, kleedruimte, keuken en toilet) een totale oppervlakte van bijna 200m². Rotterdam Fotostudio is zeer representatief en ook geschikt om klanten te ontvangen. Behalve voor a…"
-    },
-    {
-      "id": "gb-16699",
-      "slug": "film-studio-arnhem-storyshot-studio-gb-16699",
-      "name": "Film studio Arnhem | Storyshot Studio",
-      "type": "foto",
-      "city": "Arnhem",
-      "lng": 5.89902,
-      "lat": 51.98482,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-film-studio-arnhem-storyshot-studio-in-arnhem-16699-l",
-      "image": "https://www.gearbooker.com/images/listing/00045199.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 423.5,
-        "extraDayEUR": 296.5,
-        "weekEUR": 2075
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Huur onze foto & filmstudio arnhem. Geschikt voor o.a. livestreams, productfilms, presentaties, interviews met autocue, etc."
     },
     {
       "id": "gb-17366",
@@ -1452,33 +1684,33 @@
       "desc": "Te huur lichte, moderne foto/film studio in Middelburg met piano"
     },
     {
-      "id": "gb-17843",
-      "slug": "daglichtstudio-friesland-gb-17843",
-      "name": "Daglichtstudio Friesland",
+      "id": "gb-35917",
+      "slug": "fotografie-film-studio-gb-35917",
+      "name": "Fotografie / Film studio",
       "type": "foto",
-      "city": "Sloten",
-      "lng": 4.79847,
-      "lat": 52.3415,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-daglichtstudio-friesland-in-sloten-17843-l",
-      "image": "https://www.gearbooker.com/images/listing/00049615.jpg",
+      "city": "Helmond",
+      "lng": 5.66036,
+      "lat": 51.48025,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-fotografie-film-studio-in-helmond-35917-l",
+      "image": "https://www.gearbooker.com/images/listing/00095331.jpg",
       "prices": {
-        "hourEUR": 78.5,
-        "firstDayEUR": 393.5,
-        "extraDayEUR": 275.5,
-        "weekEUR": 1928
+        "hourEUR": 210,
+        "firstDayEUR": 1050,
+        "extraDayEUR": 850,
+        "weekEUR": 5145
       },
       "specs": {
-        "areaM2": 50,
+        "areaM2": 100,
         "ceilingM": null,
-        "daylight": true,
+        "daylight": false,
         "cyclorama": false,
         "greenscreen": false,
-        "parking": false,
+        "parking": true,
         "powerHeavy": false,
         "blackout": false
       },
       "source": "gearbooker",
-      "desc": "Studio D-light is dé daglichtstudio van Friesland, deze studio van 50m² bevindt zich op de eerste verdieping van de oude stadsherberg van het Elfstedenstadje Sloten. De studio is sfeervol ingericht en heeft rondom ram…"
+      "desc": " Op zoek naar een studio met ruimte, rust én goede koffie? Onze studio is te huur voor creatieve makers! Of je nu fotografeert, filmt of content schiet: bij ons krijg je 100 m² studioruimte tot je beschikking, inclu…"
     },
     {
       "id": "gb-17952",
@@ -1742,35 +1974,6 @@
       "desc": "320m2 fotostudio in Amstelveen op de begane grond. Perfect bereikbaar, gratis parkeergelegenheid voor de deur. De studio is voorzien van een grote keuren en fijne bar + chill area. Maar vooral voorzien van een grote …"
     },
     {
-      "id": "gb-27945",
-      "slug": "studio-film-foto-podcast-webinar-instructie-gb-27945",
-      "name": "Studio (film, foto, podcast, webinar, instructie)",
-      "type": "foto",
-      "city": "Veenendaal",
-      "lng": 5.55303,
-      "lat": 52.02588,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-studio-film-foto-podcast-webinar-instructie-in-veenendaal-27945-l",
-      "image": "https://www.gearbooker.com/images/listing/00072772.jpg",
-      "prices": {
-        "hourEUR": 50,
-        "firstDayEUR": 250,
-        "extraDayEUR": 200,
-        "weekEUR": 1050
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Deze studio is geschikt voor uiteenlopende producties zoals interviews, webinars, podcasts, productfoto's en voice-overs. En is uitgerust met professionele apparatuur en faciliteiten zoals verlichting, achtergrondsyst…"
-    },
-    {
       "id": "gb-28464",
       "slug": "studio-gb-28464",
       "name": "Studio",
@@ -1798,6 +2001,35 @@
       },
       "source": "gearbooker",
       "desc": "200m2 grote studio direct aan de ring van Amsterdam met gratis parkeren voor de deur. 7,5 meter hoog plafond, airco, vloerverwarming. Fijn, schoon en luxe."
+    },
+    {
+      "id": "gb-39008",
+      "slug": "studio-gb-39008",
+      "name": "studio",
+      "type": "foto",
+      "city": "Zwolle",
+      "lng": 6.07981,
+      "lat": 52.51687,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-studio-in-zwolle-39008-l",
+      "image": "https://www.gearbooker.com/images/listing/00102911.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 950,
+        "extraDayEUR": 754,
+        "weekEUR": 4655
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "In onze moderne studio in Zwolle heb je toegang tot alles wat je nodig hebt om snel en gedetailleerd te filmen en te fotograferen. Geen stress meer over het apart inhuren, ophalen en op tijd terugbrengen van apparatuu…"
     },
     {
       "id": "gb-29022",
@@ -1829,35 +2061,6 @@
       "desc": "Perfect voor het creëren van social content. TGC Studios is 24/7 beschikbaar, enkel op afspraak. Handige informatie: TGC Studios heeft een werkvloer van 45m2 inclusief onze limbowand van 3,75, TV hoek, JBL box, WIFI,…"
     },
     {
-      "id": "gb-29146",
-      "slug": "verhuur-hele-dag-fotostudio-colorwood-www-colorwood-nl-gb-29146",
-      "name": "Verhuur (hele dag) Fotostudio Colorwood | www.colorwood.nl",
-      "type": "foto",
-      "city": "Waddinxveen",
-      "lng": 4.65782,
-      "lat": 52.04219,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-verhuur-hele-dag-fotostudio-colorwood-wwwcolorwoodnl-in-waddinxveen-29146-l",
-      "image": "https://www.gearbooker.com/images/listing/00090553.jpg",
-      "prices": {
-        "hourEUR": 99,
-        "firstDayEUR": 495,
-        "extraDayEUR": 346.5,
-        "weekEUR": 2425.5
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": true,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "FOTOSTUDIO COLORWOOD PHOTO | WADDINXVEEN | WWW.COLORWOOD.NL/STUDIO Hele dag (09:00-17:00 uur) Op zoek naar een locatie om jouw professionele productie te draaien? Onze fotostudio in Waddinxveen is te huur per halve, …"
-    },
-    {
       "id": "gb-29523",
       "slug": "daglicht-foto-studio-gb-29523",
       "name": "Daglicht foto studio",
@@ -1885,64 +2088,6 @@
       },
       "source": "gearbooker",
       "desc": "Bij Studio Flows in Leiden bieden we je de perfecte ruimte voor jouw fotografieprojecten. Onze volledig gemeubileerde studio is ruim 86 vierkante meter groot en wordt overspoeld met natuurlijk daglicht, waardoor het e…"
-    },
-    {
-      "id": "gb-30239",
-      "slug": "foto-video-studio-huur-gb-30239",
-      "name": "Foto & video studio huur",
-      "type": "foto",
-      "city": "Zwaanshoek",
-      "lng": 4.62262,
-      "lat": 52.3085,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-foto-video-studio-huur-in-zwaanshoek-30239-l",
-      "image": "https://www.gearbooker.com/images/listing/00080008.jpg",
-      "prices": {
-        "hourEUR": 100,
-        "firstDayEUR": 499.5,
-        "extraDayEUR": 349.5,
-        "weekEUR": 2447.5
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": true,
-        "greenscreen": false,
-        "parking": true,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Op slechts 20 minuten van Amsterdam biedt onze professionele fotostudio alles wat je nodig hebt voor een succesvolle shoot. Met gratis parkeren voor de deur, hoef je je geen zorgen te maken over parkeerkosten of -plek…"
-    },
-    {
-      "id": "gb-30428",
-      "slug": "ruime-foto-video-studio-65m2-in-raalte-overijssel-gb-30428",
-      "name": "Ruime foto/video studio (65m2) in Raalte, Overijssel",
-      "type": "foto",
-      "city": "Raalte",
-      "lng": 6.30563,
-      "lat": 52.38741,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-ruime-fotovideo-studio-65m2-in-raalte-overijssel-in-raalte-30428-l",
-      "image": "https://www.gearbooker.com/images/listing/00089288.jpg",
-      "prices": {
-        "hourEUR": 63,
-        "firstDayEUR": 315,
-        "extraDayEUR": 220.5,
-        "weekEUR": 1543.5
-      },
-      "specs": {
-        "areaM2": 65,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Ontdek onze foto/videostudio, de perfecte locatie voor jouw creatieve projecten. Onze ruime studio is voorzien van alle basisbenodigdheden, waardoor je alle vrijheid hebt om je visie tot leven te brengen. Let op! Alle…"
     },
     {
       "id": "gb-30483",
@@ -1974,120 +2119,33 @@
       "desc": "Openingsactie Studio Loui- De Perfecte Fotostudio voor al jouw Fotoprojecten Website: Studioloui.nl Locatie: De studio bevindt zich op Briljantstraat 27, 2665 NJ in Bleiswijk, met eigen parkeergelegenheid. In de dir…"
     },
     {
-      "id": "gb-30583",
-      "slug": "studio-op-t-film-studio-gb-30583",
-      "name": "Studio op T - Film studio",
+      "id": "gb-30239",
+      "slug": "foto-video-studio-huur-gb-30239",
+      "name": "Foto & video studio huur",
       "type": "foto",
-      "city": "Eindhoven",
-      "lng": 5.46925,
-      "lat": 51.44176,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-studio-op-t---film-studio-in-eindhoven-30583-l",
-      "image": "https://www.gearbooker.com/images/listing/00081030.jpg",
+      "city": "Zwaanshoek",
+      "lng": 4.62262,
+      "lat": 52.3085,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-foto-video-studio-huur-in-zwaanshoek-30239-l",
+      "image": "https://www.gearbooker.com/images/listing/00080008.jpg",
       "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 1500,
-        "extraDayEUR": 1249,
-        "weekEUR": 70000
+        "hourEUR": 100,
+        "firstDayEUR": 499.5,
+        "extraDayEUR": 349.5,
+        "weekEUR": 2447.5
       },
       "specs": {
         "areaM2": null,
         "ceilingM": null,
         "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Ontdek Studio T by SoMMedia, jouw ideale filmstudio in Eindhoven voor het realiseren van creatieve visies en hoogwaardige producties. Gelegen in een inspirerende omgeving, bieden wij faciliteiten voor filmopnames, liv…"
-    },
-    {
-      "id": "gb-31132",
-      "slug": "studio-illume-de-daglichtstudio-voor-al-jouw-creatieve-proje-gb-31132",
-      "name": "Studio Illume, dé daglichtstudio voor al jouw creatieve projecten, centraal in Nederland!",
-      "type": "foto",
-      "city": "Zeewolde",
-      "lng": 5.45796,
-      "lat": 52.34656,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-studio-illume-de-daglichtstudio-voor-al-jouw-creatieve-projecten-centraal-in-ned-in-zeewolde-31132-l",
-      "image": "https://www.gearbooker.com/images/listing/00090836.jpg",
-      "prices": {
-        "hourEUR": 123,
-        "firstDayEUR": 615,
-        "extraDayEUR": 430.5,
-        "weekEUR": 3085
-      },
-      "specs": {
-        "areaM2": 150,
-        "ceilingM": null,
-        "daylight": true,
-        "cyclorama": false,
+        "cyclorama": true,
         "greenscreen": false,
         "parking": true,
         "powerHeavy": false,
         "blackout": false
       },
       "source": "gearbooker",
-      "desc": "Studio Illume, dé daglichtstudio / fotostudio te huur voor al jouw creatieve projecten! Pas alles aan naar wens; verplaats meubels en maak je eigen setting! Laat alles na afloop lekker staan, bij ons hoef je niet op t…"
-    },
-    {
-      "id": "gb-31187",
-      "slug": "unieke-daglichtstudio-voor-fotografie-gb-31187",
-      "name": "Unieke Daglichtstudio voor Fotografie",
-      "type": "foto",
-      "city": "Veenendaal",
-      "lng": 5.55306,
-      "lat": 52.02626,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-unieke-daglichtstudio-voor-fotografie-in-veenendaal-31187-l",
-      "image": "https://www.gearbooker.com/images/listing/00082820.jpg",
-      "prices": {
-        "hourEUR": 175,
-        "firstDayEUR": 950,
-        "extraDayEUR": 665,
-        "weekEUR": 3500
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": 4.6,
-        "daylight": true,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Te Huur: Unieke Daglichtstudio voor Fotografie Bent u op zoek naar de perfecte locatie voor uw fotografieprojecten? Wij bieden een prachtig industrieel pand te huur aan dat ideaal is als daglichtstudio. Zeer centraal …"
-    },
-    {
-      "id": "gb-31825",
-      "slug": "film-fotostudio-in-de-buurt-van-rotterdam-gb-31825",
-      "name": "Film/Fotostudio in de buurt van Rotterdam",
-      "type": "foto",
-      "city": "Waddinxveen",
-      "lng": 4.65261,
-      "lat": 52.04347,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-filmfotostudio-in-de-buurt-van-rotterdam-in-waddinxveen-31825-l",
-      "image": "https://www.gearbooker.com/images/listing/00085033.jpg",
-      "prices": {
-        "hourEUR": 120,
-        "firstDayEUR": 600,
-        "extraDayEUR": 500,
-        "weekEUR": 3600
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "“From dreams to screens” \"The Court\" is niet zomaar een foto/filmstudio – het is een plek gebouwd door professionals, voor professionals. Met een uniek basketbalthema staat onze studio symbool voor teamwork, precisie …"
+      "desc": "Op slechts 20 minuten van Amsterdam biedt onze professionele fotostudio alles wat je nodig hebt voor een succesvolle shoot. Met gratis parkeren voor de deur, hoef je je geen zorgen te maken over parkeerkosten of -plek…"
     },
     {
       "id": "gb-32033",
@@ -2148,35 +2206,6 @@
       "desc": "Rokoko Smartsuit Pro II motion capture pak met Smartgloves en Headrig voor face capture U kunt in onze motion capture studio in Utrecht terecht om uw 3D karakters tot leven te brengen met uw eigen bewegingen onder be…"
     },
     {
-      "id": "gb-32586",
-      "slug": "film-foto-en-podcast-studio-te-huur-in-pijnacker-gb-32586",
-      "name": "Film- Foto en Podcast Studio te huur in Pijnacker",
-      "type": "foto",
-      "city": "Pijnacker",
-      "lng": 4.43702,
-      "lat": 52.01846,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-film--foto-en-podcast-studio-te-huur-in-pijnacker-in-pijnacker-32586-l",
-      "image": "https://www.gearbooker.com/images/listing/00087205.jpg",
-      "prices": {
-        "hourEUR": 120,
-        "firstDayEUR": 600,
-        "extraDayEUR": 420,
-        "weekEUR": 2940
-      },
-      "specs": {
-        "areaM2": 370,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": true,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Onze film/fotostudio is perfect uitgerust voor al jouw professionele producties. Wij bieden een ruime en goed verlichte studio van maar liefst 370 m² met een grote witte limbowand van 12 bij 8 meter en 5 meter hoog, …"
-    },
-    {
       "id": "gb-32588",
       "slug": "foto-video-studio-gb-32588",
       "name": "Foto/Video Studio",
@@ -2235,122 +2264,6 @@
       "desc": "Ruimte nodig voor jouw foto of video-productie? Je kunt de studio (inclusief creatieve ruimte) huren voor een halve of een hele dag. Dit betekent dat je los van de studio, ook gebruikt kunt maken van de creatieve ruim…"
     },
     {
-      "id": "gb-33428",
-      "slug": "donkere-kamer-rotterdam-gb-33428",
-      "name": "Donkere Kamer Rotterdam",
-      "type": "foto",
-      "city": "Rotterdam",
-      "lng": 4.47951,
-      "lat": 51.92168,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-donkere-kamer-rotterdam-in-rotterdam-33428-l",
-      "image": "https://www.gearbooker.com/images/listing/00089536.jpg",
-      "prices": {
-        "hourEUR": 22,
-        "firstDayEUR": 110,
-        "extraDayEUR": 77,
-        "weekEUR": 539
-      },
-      "specs": {
-        "areaM2": 10,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "About the Darkroom Studio Rik Versteeg now offers a professional darkroom for rent, perfect for photographers looking to develop and print their own black-and-white film. Equipped with a Durst M605 enlarger with an 75…"
-    },
-    {
-      "id": "gb-33726",
-      "slug": "young-rental-studio-1-gb-33726",
-      "name": "YOUNG RENTAL STUDIO 1",
-      "type": "foto",
-      "city": "Heeze",
-      "lng": 5.57222,
-      "lat": 51.38559,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-young-rental-studio-1-in-heeze-33726-l",
-      "image": "https://www.gearbooker.com/images/listing/00091612.jpg",
-      "prices": {
-        "hourEUR": 60,
-        "firstDayEUR": 480,
-        "extraDayEUR": 480,
-        "weekEUR": 2400
-      },
-      "specs": {
-        "areaM2": 220,
-        "ceilingM": 5.5,
-        "daylight": false,
-        "cyclorama": true,
-        "greenscreen": false,
-        "parking": true,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Welkom bij onze professionele foto-en videoproductie studio. Of je nu een ambitieuze filmmaker, content creator, reclamebureau of bedrijf bent, onze studio biedt de perfecte setting om hoogwaardige video content te pr…"
-    },
-    {
-      "id": "gb-33727",
-      "slug": "young-rental-studio-2-gb-33727",
-      "name": "YOUNG RENTAL STUDIO 2",
-      "type": "foto",
-      "city": "Heeze",
-      "lng": 5.56879,
-      "lat": 51.3819,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-young-rental-studio-2-in-heeze-33727-l",
-      "image": "https://www.gearbooker.com/images/listing/00091610.jpg",
-      "prices": {
-        "hourEUR": 25,
-        "firstDayEUR": 200,
-        "extraDayEUR": 200,
-        "weekEUR": 1000
-      },
-      "specs": {
-        "areaM2": 30,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Camera apparatuur en accesoires kopen of huren kan duur uitvallen voor beginnende maar ook voor professionele fotografen. Met de opname studio van Young Productions bent u in een keer van alle gemakken voorzien. een c…"
-    },
-    {
-      "id": "gb-33822",
-      "slug": "fotostudio-houthavens-gb-33822",
-      "name": "fotostudio houthavens",
-      "type": "foto",
-      "city": "Amsterdam",
-      "lng": 4.89397,
-      "lat": 52.37193,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-fotostudio-houthavens-in-amsterdam-33822-l",
-      "image": "https://www.gearbooker.com/images/listing/00090665.jpg",
-      "prices": {
-        "hourEUR": 100,
-        "firstDayEUR": 520,
-        "extraDayEUR": 380,
-        "weekEUR": 2500
-      },
-      "specs": {
-        "areaM2": 75,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": true,
-        "greenscreen": false,
-        "parking": true,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Onze ruime en volledig uitgeruste studio ligt in de levendige wijk Houthavens en is perfect voor fotografie, filmproducties, workshops en creatieve vergaderingen. Met een open ontwerp en een lichte, moderne esthetiek …"
-    },
-    {
       "id": "gb-34179",
       "slug": "nieuw-film-fotostudio-150m2-vlakbij-amsterdam-gb-34179",
       "name": "NIEUW! ☼ FILM & FOTOSTUDIO » 150M2 » VLAKBIJ AMSTERDAM",
@@ -2380,62 +2293,33 @@
       "desc": "✔ Daglicht. ✔ Karakteristieke ruimte in voormalig schildersatelier met 6m hoog plafond. ✔ Zaans houten pakhuis uit 1735. Zaan Studio ★ Wordt gebruikt als fotostudio & filmstudio of shootlocatie & filmlocatie. ★ Ideaa…"
     },
     {
-      "id": "gb-35917",
-      "slug": "fotografie-film-studio-gb-35917",
-      "name": "Fotografie / Film studio",
+      "id": "gb-33822",
+      "slug": "fotostudio-houthavens-gb-33822",
+      "name": "fotostudio houthavens",
       "type": "foto",
-      "city": "Helmond",
-      "lng": 5.66036,
-      "lat": 51.48025,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-fotografie-film-studio-in-helmond-35917-l",
-      "image": "https://www.gearbooker.com/images/listing/00095331.jpg",
+      "city": "Amsterdam",
+      "lng": 4.89397,
+      "lat": 52.37193,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-fotostudio-houthavens-in-amsterdam-33822-l",
+      "image": "https://www.gearbooker.com/images/listing/00090665.jpg",
       "prices": {
-        "hourEUR": 210,
-        "firstDayEUR": 1050,
-        "extraDayEUR": 850,
-        "weekEUR": 5145
+        "hourEUR": 100,
+        "firstDayEUR": 520,
+        "extraDayEUR": 380,
+        "weekEUR": 2500
       },
       "specs": {
-        "areaM2": 100,
+        "areaM2": 75,
         "ceilingM": null,
         "daylight": false,
-        "cyclorama": false,
+        "cyclorama": true,
         "greenscreen": false,
         "parking": true,
         "powerHeavy": false,
         "blackout": false
       },
       "source": "gearbooker",
-      "desc": " Op zoek naar een studio met ruimte, rust én goede koffie? Onze studio is te huur voor creatieve makers! Of je nu fotografeert, filmt of content schiet: bij ons krijg je 100 m² studioruimte tot je beschikking, inclu…"
-    },
-    {
-      "id": "gb-35984",
-      "slug": "foto-video-studio-maassluis-gb-35984",
-      "name": "Foto-/Video Studio Maassluis",
-      "type": "foto",
-      "city": "Maassluis",
-      "lng": 4.24733,
-      "lat": 51.92457,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-foto-video-studio-maassluis-in-maassluis-35984-l",
-      "image": "https://www.gearbooker.com/images/listing/00095436.jpg",
-      "prices": {
-        "hourEUR": 55,
-        "firstDayEUR": 275,
-        "extraDayEUR": 192.5,
-        "weekEUR": 1347.5
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": true,
-        "cyclorama": false,
-        "greenscreen": true,
-        "parking": true,
-        "powerHeavy": false,
-        "blackout": true
-      },
-      "source": "gearbooker",
-      "desc": "Ben jij op zoek naar een compacte, veelzijdige studio voor jouw volgende shoot? Onze studio in Maassluis is ideaal voor het maken van portretfoto’s, productshots, explainer video’s, social content, gifjes, stop-motion…"
+      "desc": "Onze ruime en volledig uitgeruste studio ligt in de levendige wijk Houthavens en is perfect voor fotografie, filmproducties, workshops en creatieve vergaderingen. Met een open ontwerp en een lichte, moderne esthetiek …"
     },
     {
       "id": "gb-36104",
@@ -2641,35 +2525,6 @@
       "desc": "Spacious and stylish photo studio in Almere — perfect for content creators, photographers, and videographers. ✔ Equipped with multiple color backgrounds ✔ Professional lighting setup ✔ Separate changing & makeup area …"
     },
     {
-      "id": "gb-39008",
-      "slug": "studio-gb-39008",
-      "name": "studio",
-      "type": "foto",
-      "city": "Zwolle",
-      "lng": 6.07981,
-      "lat": 52.51687,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-studio-in-zwolle-39008-l",
-      "image": "https://www.gearbooker.com/images/listing/00102911.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 950,
-        "extraDayEUR": 754,
-        "weekEUR": 4655
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "In onze moderne studio in Zwolle heb je toegang tot alles wat je nodig hebt om snel en gedetailleerd te filmen en te fotograferen. Geen stress meer over het apart inhuren, ophalen en op tijd terugbrengen van apparatuu…"
-    },
-    {
       "id": "gb-39197",
       "slug": "daylight-photo-video-studio-affordable-55m2-free-parking-cof-gb-39197",
       "name": "Daylight photo/video studio, affordable, 55m2, free parking/coffee/tea close to Amsterdam!",
@@ -2784,122 +2639,6 @@
       },
       "source": "gearbooker",
       "desc": "Foto/Film opnames in het 162Studios medialab - Extra tijd bijboeken is mogelijk De ruimte is voorzien van twee hoge ramen met mat glas op 50º NO die op een kier open kunnen, twee verwarmingselementen en donker blauw…"
-    },
-    {
-      "id": "gb-41237",
-      "slug": "videografie-assistent-optioneel-bij-huur-fotostudio-colorwoo-gb-41237",
-      "name": "Videografie assistent | optioneel bij huur Fotostudio Colorwood Photo | www.colorwood.nl/studio",
-      "type": "foto",
-      "city": "Waddinxveen",
-      "lng": 4.65974,
-      "lat": 52.04255,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-videografie-assistent-optioneel-bij-huur-fotostudio-colorwood-photo-wwwcolorwood-in-waddinxveen-41237-l",
-      "image": "https://www.gearbooker.com/images/listing/00109606.jpg",
-      "prices": {
-        "hourEUR": 155,
-        "firstDayEUR": 1200,
-        "extraDayEUR": 1200,
-        "weekEUR": 6000
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": true,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Bij huur van Fotostudio Colorwood is het mogelijk om een ervaren videografie-assistent bij te boeken. Om je shoot soepel en zorgeloos te laten verlopen, helpt hij je met het maken van de lichtopstellingen en je camera…"
-    },
-    {
-      "id": "gb-41239",
-      "slug": "fotografie-assistent-optioneel-bij-huur-fotostudio-colorwood-gb-41239",
-      "name": "Fotografie assistent | optioneel bij huur Fotostudio Colorwood Photo | www.colorwood.nl/studio",
-      "type": "foto",
-      "city": "Waddinxveen",
-      "lng": 4.65803,
-      "lat": 52.04349,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-fotografie-assistent-optioneel-bij-huur-fotostudio-colorwood-photo-wwwcolorwoodn-in-waddinxveen-41239-l",
-      "image": "https://www.gearbooker.com/images/listing/00109612.jpg",
-      "prices": {
-        "hourEUR": 155,
-        "firstDayEUR": 1200,
-        "extraDayEUR": 1200,
-        "weekEUR": 6000
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": true,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Bij huur van Fotostudio Colorwood is het mogelijk om een ervaren fotografie-assistent bij te boeken. Om je shoot soepel en zorgeloos te laten verlopen, helpt hij je met het maken van de lichtopstellingen en je camera-…"
-    },
-    {
-      "id": "gb-41277",
-      "slug": "verhuur-halve-dag-fotostudio-colorwood-www-colorwood-nl-gb-41277",
-      "name": "Verhuur (halve dag) Fotostudio Colorwood | www.colorwood.nl",
-      "type": "foto",
-      "city": "Waddinxveen",
-      "lng": 4.65654,
-      "lat": 52.0457,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-verhuur-halve-dag-fotostudio-colorwood-wwwcolorwoodnl-in-waddinxveen-41277-l",
-      "image": "https://www.gearbooker.com/images/listing/00109721.jpg",
-      "prices": {
-        "hourEUR": 55,
-        "firstDayEUR": 275,
-        "extraDayEUR": 192.5,
-        "weekEUR": 1347.5
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": true,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "FOTOSTUDIO COLORWOOD PHOTO | WADDINXVEEN | WWW.COLORWOOD.NL/STUDIO Halve dag (4 uur, 9:00-13:00 uur of 13:00-17:00 uur) Op zoek naar een locatie om jouw professionele productie te draaien? Onze fotostudio in Waddinxv…"
-    },
-    {
-      "id": "gb-41616",
-      "slug": "photo-studio-gb-41616",
-      "name": "Photo Studio",
-      "type": "foto",
-      "city": "Utrecht",
-      "lng": 5.12454,
-      "lat": 52.08988,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-photo-studio-in-utrecht-41616-l",
-      "image": "https://www.gearbooker.com/images/listing/00110732.jpg",
-      "prices": {
-        "hourEUR": 75,
-        "firstDayEUR": 450,
-        "extraDayEUR": 315,
-        "weekEUR": 2205
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Pepeditss bied een veelzijdige, flexibele studioruimte aan met oneindig veel mogelijkheden! Portret fotografie, videoproducties, Interviews, product fotografie, fashion-video’s of een podcasts, onze studio is ontworpe…"
     },
     {
       "id": "gb-41973",
@@ -3018,35 +2757,6 @@
       "desc": "The Grid is een studio van 50 vierkante meter bij The Hague Tech, ontworpen voor makers die een praktische en goed bereikbare plek zoeken om te creëren. Met een plafondhoogte van 2.5 meter en een flexibele indeling is…"
     },
     {
-      "id": "gb-43371",
-      "slug": "fotostudio-gb-43371",
-      "name": "fotostudio",
-      "type": "foto",
-      "city": "Eindhoven",
-      "lng": 5.47412,
-      "lat": 51.44213,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-fotostudio-in-eindhoven-43371-l",
-      "image": "https://www.gearbooker.com/images/listing/00115975.jpg",
-      "prices": {
-        "hourEUR": 90,
-        "firstDayEUR": 450,
-        "extraDayEUR": 315,
-        "weekEUR": 2205
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Our photo studio is the ideal space for photographers, videographers, content creators, and brands looking for quality and flexibility. The studio is spacious, bright, and fully equipped with professional lighting, ba…"
-    },
-    {
       "id": "gb-43877",
       "slug": "foto-studio-gb-43877",
       "name": "Foto studio",
@@ -3105,35 +2815,6 @@
       "desc": "MocoMoco is een van de grootste film en foto studio’s van Nederland, gevestigd in Breda. De ruime 250m2 studio-oppervlak en 200m2 aan additionele ruimtes maakt de studio ideaal voor grote filmproducties, fotografie e…"
     },
     {
-      "id": "gb-44318",
-      "slug": "rauwe-industriele-hal-nabij-amsterdam-400-m2-eigen-parkeerpl-gb-44318",
-      "name": "Rauwe Industriële hal nabij Amsterdam (400 m2-eigen parkeerplaats voor 20 auto's- krachtstroom )",
-      "type": "foto",
-      "city": "Vijfhuizen",
-      "lng": 4.67941,
-      "lat": 52.35188,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-rauwe-industriele-hal-nabij-amsterdam-400-m2-eigen-parkeerplaats-voor-20-autos--in-vijfhuizen-44318-l",
-      "image": "https://www.gearbooker.com/images/listing/00118488.jpg",
-      "prices": {
-        "hourEUR": 250,
-        "firstDayEUR": 1150,
-        "extraDayEUR": 805,
-        "weekEUR": 3500
-      },
-      "specs": {
-        "areaM2": 400,
-        "ceilingM": null,
-        "daylight": true,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": true,
-        "powerHeavy": true,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "te huur ;karakteristieke, authentieke filmlocatie of fotoshoot nabij Amsterdam Deze robuuste industriële hal van 400 m² bruto vloeroppervlak in Vijfhuizen biedt de perfecte rauwe, industriële esthetiek. De locatie is …"
-    },
-    {
       "id": "gb-44373",
       "slug": "film-foto-studio-arnhem-gb-44373",
       "name": "Film & foto Studio Arnhem",
@@ -3161,6 +2842,35 @@
       },
       "source": "gearbooker",
       "desc": "Een strakke, technisch uitgeruste filmstudio, fotostudio en videostudio in de omgeving van Arnhem. Ontworpen voor makers die behoefte hebben aan controle en kwaliteit. Maak gebruik van onze limbowand, creëer een volle…"
+    },
+    {
+      "id": "gb-44318",
+      "slug": "rauwe-industriele-hal-nabij-amsterdam-400-m2-eigen-parkeerpl-gb-44318",
+      "name": "Rauwe Industriële hal nabij Amsterdam (400 m2-eigen parkeerplaats voor 20 auto's- krachtstroom )",
+      "type": "foto",
+      "city": "Vijfhuizen",
+      "lng": 4.67941,
+      "lat": 52.35188,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-rauwe-industriele-hal-nabij-amsterdam-400-m2-eigen-parkeerplaats-voor-20-autos--in-vijfhuizen-44318-l",
+      "image": "https://www.gearbooker.com/images/listing/00118488.jpg",
+      "prices": {
+        "hourEUR": 250,
+        "firstDayEUR": 1150,
+        "extraDayEUR": 805,
+        "weekEUR": 3500
+      },
+      "specs": {
+        "areaM2": 400,
+        "ceilingM": null,
+        "daylight": true,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": true,
+        "powerHeavy": true,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "te huur ;karakteristieke, authentieke filmlocatie of fotoshoot nabij Amsterdam Deze robuuste industriële hal van 400 m² bruto vloeroppervlak in Vijfhuizen biedt de perfecte rauwe, industriële esthetiek. De locatie is …"
     },
     {
       "id": "gb-18094",
@@ -3219,6 +2929,35 @@
       },
       "source": "gearbooker",
       "desc": "De RØDECaster Pro is een complete podcaststudio in één apparaat. Met 4 XLR‑ingangen, ingebouwde audio‑interface en multitrack opname op microSD maak je in no‑time professionele podcasts, interviews of (radio)shows. Je…"
+    },
+    {
+      "id": "gb-15439",
+      "slug": "podcaststudio-semi-professionele-podcaststudio-in-centrum-le-gb-15439",
+      "name": "Podcaststudio - (Semi)Professionele Podcaststudio in centrum Leiden",
+      "type": "podcast",
+      "city": "Leiden",
+      "lng": 4.49638,
+      "lat": 52.16236,
+      "url": "https://www.gearbooker.com/en/rent-podcast-studios-podcaststudio---semiprofessionele-podcaststudio-in-centrum-leiden-in-leiden-15439-l",
+      "image": "https://www.gearbooker.com/images/listing/00051894.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 100,
+        "extraDayEUR": 68,
+        "weekEUR": 350
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Maak een podcast tegen een scherpe prijs bij onze kleine Podcaststudio. Features: - 3 Microfoons (RØDE Podmic) - RØDECASTER Pro - Koptelefoons (Devine Pro4000 - Professionele edit PC met 3 schermen - VGA monitoren me…"
     },
     {
       "id": "gb-12532",
@@ -3453,35 +3192,6 @@
       "desc": "Deze knusse podcaststudio staat in Wijchen, vlak onder Nijmegen. De podcast en webinar studio is voorzien van een aparte regieruimte waarin de techniek staat om alle opnames te doen. Dit zorgt voor een stille en rusti…"
     },
     {
-      "id": "gb-15439",
-      "slug": "podcaststudio-semi-professionele-podcaststudio-in-centrum-le-gb-15439",
-      "name": "Podcaststudio - (Semi)Professionele Podcaststudio in centrum Leiden",
-      "type": "podcast",
-      "city": "Leiden",
-      "lng": 4.49638,
-      "lat": 52.16236,
-      "url": "https://www.gearbooker.com/en/rent-podcast-studios-podcaststudio---semiprofessionele-podcaststudio-in-centrum-leiden-in-leiden-15439-l",
-      "image": "https://www.gearbooker.com/images/listing/00051894.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 100,
-        "extraDayEUR": 68,
-        "weekEUR": 350
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Maak een podcast tegen een scherpe prijs bij onze kleine Podcaststudio. Features: - 3 Microfoons (RØDE Podmic) - RØDECASTER Pro - Koptelefoons (Devine Pro4000 - Professionele edit PC met 3 schermen - VGA monitoren me…"
-    },
-    {
       "id": "gb-16178",
       "slug": "podcast-vodcast-studio-te-huur-in-utrecht-gb-16178",
       "name": "Podcast/Vodcast studio te huur in Utrecht",
@@ -3538,6 +3248,64 @@
       },
       "source": "gearbooker",
       "desc": "Op zoek naar een hoogwaardige podcaststudio met professionele apparatuur? Onze volledig geïsoleerde studio biedt alles wat je nodig hebt voor een kraakheldere opname. Ooit een oude studio van een groot platenlabel, n…"
+    },
+    {
+      "id": "gb-30635",
+      "slug": "podcaststudio-in-het-gooi-gb-30635",
+      "name": "Podcaststudio in Het Gooi",
+      "type": "podcast",
+      "city": "Hilversum",
+      "lng": 5.17449,
+      "lat": 52.2261,
+      "url": "https://www.gearbooker.com/en/rent-podcast-studios-podcaststudio-in-het-gooi-in-hilversum-30635-l",
+      "image": "https://www.gearbooker.com/images/listing/00090099.jpg",
+      "prices": {
+        "hourEUR": 80,
+        "firstDayEUR": 800,
+        "extraDayEUR": 800,
+        "weekEUR": 3920
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "De studio is gevestigd aan de Naarderweg 16 in een prachtige bosrijke villawijk in Hilversum, en bestaat uit een ruime sfeervolle podcast studio voor de podcast opname met daarnaast een volwaardige studio voor audio n…"
+    },
+    {
+      "id": "gb-33218",
+      "slug": "webinar-video-podcast-studio-gb-33218",
+      "name": "Webinar/ video podcast studio",
+      "type": "podcast",
+      "city": "Hilversum",
+      "lng": 5.17296,
+      "lat": 52.22602,
+      "url": "https://www.gearbooker.com/en/rent-podcast-studios-webinar-video-podcast-studio-in-hilversum-33218-l",
+      "image": "https://www.gearbooker.com/images/listing/00090100.jpg",
+      "prices": {
+        "hourEUR": 205,
+        "firstDayEUR": 1650,
+        "extraDayEUR": 1650,
+        "weekEUR": 8250
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "De studio is gevestigd aan de Naarderweg 16 in een prachtige bosrijke Hilversum, en bestaat uit een ruime sfeervolle studio voor het webinar of de (video-) podcast opname met daarnaast een volwaardige meercamera beeld…"
     },
     {
       "id": "gb-31074",
@@ -3625,64 +3393,6 @@
       },
       "source": "gearbooker",
       "desc": "Complete podcast-set om Podcasts op locatie op te nemen. De set bestaat uit: Rødecaster Pro II 4x PodMic op studioarm 4x NTH100 koptelefoon"
-    },
-    {
-      "id": "gb-30635",
-      "slug": "podcaststudio-in-het-gooi-gb-30635",
-      "name": "Podcaststudio in Het Gooi",
-      "type": "podcast",
-      "city": "Hilversum",
-      "lng": 5.17449,
-      "lat": 52.2261,
-      "url": "https://www.gearbooker.com/en/rent-podcast-studios-podcaststudio-in-het-gooi-in-hilversum-30635-l",
-      "image": "https://www.gearbooker.com/images/listing/00090099.jpg",
-      "prices": {
-        "hourEUR": 80,
-        "firstDayEUR": 800,
-        "extraDayEUR": 800,
-        "weekEUR": 3920
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "De studio is gevestigd aan de Naarderweg 16 in een prachtige bosrijke villawijk in Hilversum, en bestaat uit een ruime sfeervolle podcast studio voor de podcast opname met daarnaast een volwaardige studio voor audio n…"
-    },
-    {
-      "id": "gb-33218",
-      "slug": "webinar-video-podcast-studio-gb-33218",
-      "name": "Webinar/ video podcast studio",
-      "type": "podcast",
-      "city": "Hilversum",
-      "lng": 5.17296,
-      "lat": 52.22602,
-      "url": "https://www.gearbooker.com/en/rent-podcast-studios-webinar-video-podcast-studio-in-hilversum-33218-l",
-      "image": "https://www.gearbooker.com/images/listing/00090100.jpg",
-      "prices": {
-        "hourEUR": 205,
-        "firstDayEUR": 1650,
-        "extraDayEUR": 1650,
-        "weekEUR": 8250
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "De studio is gevestigd aan de Naarderweg 16 in een prachtige bosrijke Hilversum, en bestaat uit een ruime sfeervolle studio voor het webinar of de (video-) podcast opname met daarnaast een volwaardige meercamera beeld…"
     },
     {
       "id": "gb-33227",
@@ -4004,20 +3714,78 @@
       "desc": "Wil je een professionele podcast of interview opnemen zonder technisch gedoe? Deze complete, mobiele 2-persoons podcast studio zit verpakt in een oersterke flightcase en is al voor 80% volledig voorbereid. Je hoeft ge…"
     },
     {
-      "id": "gb-3851",
-      "slug": "muziek-opname-studio-gb-3851",
-      "name": "Muziek & Opname Studio",
+      "id": "gb-33762",
+      "slug": "podcast-studio-in-hilversum-voor-audio-en-videopodcast-en-we-gb-33762",
+      "name": "Podcast studio in Hilversum voor audio- en videopodcast en webinar.",
+      "type": "muziek",
+      "city": "Hilversum",
+      "lng": 5.17889,
+      "lat": 52.22157,
+      "url": "https://www.gearbooker.com/en/rent-music-studios-and-sound-studios-podcast-studio-in-hilversum-voor-audio--en-videopodcast-en-webinar-in-hilversum-33762-l",
+      "image": "https://www.gearbooker.com/images/listing/00090454.jpg",
+      "prices": {
+        "hourEUR": 80,
+        "firstDayEUR": 800,
+        "extraDayEUR": 800,
+        "weekEUR": 3920
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": true,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Wil je een podcast opnemen, in een professionele en héle stille studio? Mét of zonder camera's, of een webinar en reels voor je socials? Dan hebben wij de beste studio voor je met een mooi decor en een grote tafel. Z…"
+    },
+    {
+      "id": "gb-42068",
+      "slug": "geluidsstudio-gb-42068",
+      "name": "Geluidsstudio",
       "type": "muziek",
       "city": "Amsterdam",
-      "lng": 4.89432,
-      "lat": 52.37075,
-      "url": "https://www.gearbooker.com/en/rent-music-studios-and-sound-studios-muziek-opname-studio-in-amsterdam-3851-l",
-      "image": "https://www.gearbooker.com/images/listing/00009194.jpg",
+      "lng": 4.89359,
+      "lat": 52.37262,
+      "url": "https://www.gearbooker.com/en/rent-music-studios-and-sound-studios-geluidsstudio-in-amsterdam-42068-l",
+      "image": "https://www.gearbooker.com/images/listing/00112080.jpg",
       "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 270,
-        "extraDayEUR": 189,
-        "weekEUR": 1323
+        "hourEUR": 160,
+        "firstDayEUR": 1250,
+        "extraDayEUR": 1150,
+        "weekEUR": 8000
+      },
+      "specs": {
+        "areaM2": 140,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Grote multifunctionele Geluidsstudio in Amsterdam, met grote opnameruimte 140m2 met drie iso-booths. 2 Comtrolekamers met o.a. ATC Dolby Atmos afluistering."
+    },
+    {
+      "id": "gb-42216",
+      "slug": "mastering-studio-gb-42216",
+      "name": "Mastering studio",
+      "type": "muziek",
+      "city": "Hilversum",
+      "lng": 5.1759,
+      "lat": 52.22122,
+      "url": "https://www.gearbooker.com/en/rent-music-studios-and-sound-studios-mastering-studio-in-hilversum-42216-l",
+      "image": "https://www.gearbooker.com/images/listing/00112549.jpg",
+      "prices": {
+        "hourEUR": 160,
+        "firstDayEUR": 800,
+        "extraDayEUR": 560,
+        "weekEUR": 3920
       },
       "specs": {
         "areaM2": null,
@@ -4030,7 +3798,7 @@
         "blackout": false
       },
       "source": "gearbooker",
-      "desc": "Imperceptible Art Production House Focussed on supporting start up artists, unsigned artists, with the working conditions of a professional artist. If you have been writing for years and you never had the chance or m…"
+      "desc": "I mix and master your song without losing sight of the music. I specialize in mastering, mixing, and (remote)recording contemporary classical, orchestral, jazz, cinematic, experimental and electronic music."
     },
     {
       "id": "gb-4700",
@@ -4060,6 +3828,64 @@
       },
       "source": "gearbooker",
       "desc": "Deze studio is te huur met technieker, studio is hoofdzakelijk opgericht voor zowel preproductie als volwaardige producties. Er zijn 2 ruimtes aanwezig, mixing room 24m² en live room 24m² AD/DA conversion is RME Pream…"
+    },
+    {
+      "id": "gb-3851",
+      "slug": "muziek-opname-studio-gb-3851",
+      "name": "Muziek & Opname Studio",
+      "type": "muziek",
+      "city": "Amsterdam",
+      "lng": 4.89432,
+      "lat": 52.37075,
+      "url": "https://www.gearbooker.com/en/rent-music-studios-and-sound-studios-muziek-opname-studio-in-amsterdam-3851-l",
+      "image": "https://www.gearbooker.com/images/listing/00009194.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 270,
+        "extraDayEUR": 189,
+        "weekEUR": 1323
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Imperceptible Art Production House Focussed on supporting start up artists, unsigned artists, with the working conditions of a professional artist. If you have been writing for years and you never had the chance or m…"
+    },
+    {
+      "id": "gb-14114",
+      "slug": "stortion-studio-s-recording-studio-gb-14114",
+      "name": "Stortion Studio's Recording Studio",
+      "type": "muziek",
+      "city": "Amsterdam",
+      "lng": 4.89149,
+      "lat": 52.3706,
+      "url": "https://www.gearbooker.com/en/rent-music-studios-and-sound-studios-stortion-studios-recording-studio-in-amsterdam-14114-l",
+      "image": "https://www.gearbooker.com/images/listing/00047344.jpg",
+      "prices": {
+        "hourEUR": 35,
+        "firstDayEUR": 400,
+        "extraDayEUR": 280,
+        "weekEUR": 1960
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Recording studio for rent. This is the most affordable professional studio at the moment. Feel free to message us if interested. Check our website for competitive prices, you can make a reservation directly through o…"
     },
     {
       "id": "gb-5852",
@@ -4323,35 +4149,6 @@
       "desc": "DF Media Services is een full service audio productie bedrijf en zodoende verzorgen wij ook graag de audio nabewerking voor uw project. Dat doen we met Pro Tools ultimate, de wereld standaard voor opname, montage en m…"
     },
     {
-      "id": "gb-14114",
-      "slug": "stortion-studio-s-recording-studio-gb-14114",
-      "name": "Stortion Studio's Recording Studio",
-      "type": "muziek",
-      "city": "Amsterdam",
-      "lng": 4.89149,
-      "lat": 52.3706,
-      "url": "https://www.gearbooker.com/en/rent-music-studios-and-sound-studios-stortion-studios-recording-studio-in-amsterdam-14114-l",
-      "image": "https://www.gearbooker.com/images/listing/00047344.jpg",
-      "prices": {
-        "hourEUR": 35,
-        "firstDayEUR": 400,
-        "extraDayEUR": 280,
-        "weekEUR": 1960
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Recording studio for rent. This is the most affordable professional studio at the moment. Feel free to message us if interested. Check our website for competitive prices, you can make a reservation directly through o…"
-    },
-    {
       "id": "gb-14421",
       "slug": "timechamber-muziekstudio-gb-14421",
       "name": "Timechamber Muziekstudio",
@@ -4410,35 +4207,6 @@
       "desc": "SoundBest is een Audio Hub gevestigd in Hilversum. Op zoek naar een akoestisch betrouwbare plek om te werken aan je projecten? De studio is geschikt voor voice-over opnames, podcasts, muziekproductie, stem opnames en…"
     },
     {
-      "id": "gb-17170",
-      "slug": "dj-huren-gb-17170",
-      "name": "DJ HUREN",
-      "type": "muziek",
-      "city": "Klundert",
-      "lng": 4.53521,
-      "lat": 51.66458,
-      "url": "https://www.gearbooker.com/en/rent-music-studios-and-sound-studios-dj-huren-in-klundert-17170-l",
-      "image": "https://www.gearbooker.com/images/listing/00047578.jpg",
-      "prices": {
-        "hourEUR": 100,
-        "firstDayEUR": 2400,
-        "extraDayEUR": 1680,
-        "weekEUR": 11760
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "DJ HUREN VOOR €100 per uur All-inclusive licht, geluid & special fx! Stuur me gerust een bericht dan bespreken we de mogelijkheden!"
-    },
-    {
       "id": "gb-18267",
       "slug": "studio-opname-gb-18267",
       "name": "STUDIO OPNAME",
@@ -4466,6 +4234,35 @@
       },
       "source": "gearbooker",
       "desc": "Contacteer ons voor jou studio opname, wij maken beats mixen + masteren meer dan 10jaar ervaring in muziek dus je bent welkom"
+    },
+    {
+      "id": "gb-17170",
+      "slug": "dj-huren-gb-17170",
+      "name": "DJ HUREN",
+      "type": "muziek",
+      "city": "Klundert",
+      "lng": 4.53521,
+      "lat": 51.66458,
+      "url": "https://www.gearbooker.com/en/rent-music-studios-and-sound-studios-dj-huren-in-klundert-17170-l",
+      "image": "https://www.gearbooker.com/images/listing/00047578.jpg",
+      "prices": {
+        "hourEUR": 100,
+        "firstDayEUR": 2400,
+        "extraDayEUR": 1680,
+        "weekEUR": 11760
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "DJ HUREN VOOR €100 per uur All-inclusive licht, geluid & special fx! Stuur me gerust een bericht dan bespreken we de mogelijkheden!"
     },
     {
       "id": "gb-29728",
@@ -4613,6 +4410,35 @@
       "desc": "15 minutes from Amsterdam you find SubElevation Studio – Where Vision Meets Sound SubElevation is one of the newest and most prominent high-end music studios. Here, you’ll find not only world-class equipment but also …"
     },
     {
+      "id": "gb-44069",
+      "slug": "muziekstudio-gb-44069",
+      "name": "Muziekstudio",
+      "type": "muziek",
+      "city": "Antwerpen",
+      "lng": 4.40158,
+      "lat": 51.21878,
+      "url": "https://www.gearbooker.com/en/rent-music-studios-and-sound-studios-muziekstudio-in-antwerpen-44069-l",
+      "image": "https://www.gearbooker.com/images/listing/00117744.jpg",
+      "prices": {
+        "hourEUR": 50,
+        "firstDayEUR": 250,
+        "extraDayEUR": 175,
+        "weekEUR": 1225
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Op onze locatie in hartje Antwerpen beschikken wij over twee volledig uitgeruste studio’s waar je kan opnemen, repeteren en produceren – met één van onze in-house engineers, of volledig zelfstandig, met of zonder het …"
+    },
+    {
       "id": "gb-33110",
       "slug": "mixing-mastering-geluid-muziek-studio-te-huur-gb-33110",
       "name": "Mixing/mastering/geluid/muziek studio te huur",
@@ -4671,20 +4497,20 @@
       "desc": "Ruime muziekstudio in Schelle met flexibele huurmogelijkheden. Inclusief instrumenten en audio-materialen: - Focal Alpha 65 Evo active speakers - Genelec 8010a active speakers - Behringer X32 mixing desk - Gretch drum…"
     },
     {
-      "id": "gb-33762",
-      "slug": "podcast-studio-in-hilversum-voor-audio-en-videopodcast-en-we-gb-33762",
-      "name": "Podcast studio in Hilversum voor audio- en videopodcast en webinar.",
+      "id": "gb-40685",
+      "slug": "muziek-studio-content-creator-werkruimte-te-huur-gb-40685",
+      "name": "Muziek Studio - Content Creator - Werkruimte te Huur",
       "type": "muziek",
-      "city": "Hilversum",
-      "lng": 5.17889,
-      "lat": 52.22157,
-      "url": "https://www.gearbooker.com/en/rent-music-studios-and-sound-studios-podcast-studio-in-hilversum-voor-audio--en-videopodcast-en-webinar-in-hilversum-33762-l",
-      "image": "https://www.gearbooker.com/images/listing/00090454.jpg",
+      "city": "Haarlem",
+      "lng": 4.64894,
+      "lat": 52.38735,
+      "url": "https://www.gearbooker.com/en/rent-music-studios-and-sound-studios-muziek-studio---content-creator---werkruimte-te-huur-in-haarlem-40685-l",
+      "image": "https://www.gearbooker.com/images/listing/00108094.jpg",
       "prices": {
-        "hourEUR": 80,
-        "firstDayEUR": 800,
-        "extraDayEUR": 800,
-        "weekEUR": 3920
+        "hourEUR": null,
+        "firstDayEUR": 110,
+        "extraDayEUR": 75,
+        "weekEUR": 500
       },
       "specs": {
         "areaM2": null,
@@ -4692,12 +4518,12 @@
         "daylight": false,
         "cyclorama": false,
         "greenscreen": false,
-        "parking": true,
+        "parking": false,
         "powerHeavy": false,
         "blackout": false
       },
       "source": "gearbooker",
-      "desc": "Wil je een podcast opnemen, in een professionele en héle stille studio? Mét of zonder camera's, of een webinar en reels voor je socials? Dan hebben wij de beste studio voor je met een mooi decor en een grote tafel. Z…"
+      "desc": " Muziekstudio / Creatieve Werkruimte te Huur  Ben jij muzikant, content creator of gewoon op zoek naar een inspirerende werkplek? Mijn studio is beschikbaar als: ✅ Muziekstudio – professioneel geluid, perfect voor…"
     },
     {
       "id": "gb-35982",
@@ -4758,35 +4584,6 @@
       "desc": "Werk zelfstandig of samen in 1 van onze muziekstudio's (inclusief Neumann microfoon en UAD geluidskaart) Geschikt voor maximaal 4 à 5 personen op goedkeuring. - Extra tijd bijboeken is mogelijk We bieden een 'groene…"
     },
     {
-      "id": "gb-40685",
-      "slug": "muziek-studio-content-creator-werkruimte-te-huur-gb-40685",
-      "name": "Muziek Studio - Content Creator - Werkruimte te Huur",
-      "type": "muziek",
-      "city": "Haarlem",
-      "lng": 4.64894,
-      "lat": 52.38735,
-      "url": "https://www.gearbooker.com/en/rent-music-studios-and-sound-studios-muziek-studio---content-creator---werkruimte-te-huur-in-haarlem-40685-l",
-      "image": "https://www.gearbooker.com/images/listing/00108094.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 110,
-        "extraDayEUR": 75,
-        "weekEUR": 500
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": " Muziekstudio / Creatieve Werkruimte te Huur  Ben jij muzikant, content creator of gewoon op zoek naar een inspirerende werkplek? Mijn studio is beschikbaar als: ✅ Muziekstudio – professioneel geluid, perfect voor…"
-    },
-    {
       "id": "gb-41009",
       "slug": "muziekstudio-met-top-kwaliteit-acoustics-en-apparatuur-te-hu-gb-41009",
       "name": "Muziekstudio met top kwaliteit acoustics en apparatuur te huur in Rotterdam",
@@ -4814,64 +4611,6 @@
       },
       "source": "gearbooker",
       "desc": "Studiodirrix is ​​een nieuwe muziekopname- en postproductiestudio in Rotterdam, gevestigd in het innovatieve en creatieve M4H-gebied. Met zijn lichte en moderne interieur, prachtige akoestische afwerking, hoogwaardige…"
-    },
-    {
-      "id": "gb-42068",
-      "slug": "geluidsstudio-gb-42068",
-      "name": "Geluidsstudio",
-      "type": "muziek",
-      "city": "Amsterdam",
-      "lng": 4.89359,
-      "lat": 52.37262,
-      "url": "https://www.gearbooker.com/en/rent-music-studios-and-sound-studios-geluidsstudio-in-amsterdam-42068-l",
-      "image": "https://www.gearbooker.com/images/listing/00112080.jpg",
-      "prices": {
-        "hourEUR": 160,
-        "firstDayEUR": 1250,
-        "extraDayEUR": 1150,
-        "weekEUR": 8000
-      },
-      "specs": {
-        "areaM2": 140,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Grote multifunctionele Geluidsstudio in Amsterdam, met grote opnameruimte 140m2 met drie iso-booths. 2 Comtrolekamers met o.a. ATC Dolby Atmos afluistering."
-    },
-    {
-      "id": "gb-42216",
-      "slug": "mastering-studio-gb-42216",
-      "name": "Mastering studio",
-      "type": "muziek",
-      "city": "Hilversum",
-      "lng": 5.1759,
-      "lat": 52.22122,
-      "url": "https://www.gearbooker.com/en/rent-music-studios-and-sound-studios-mastering-studio-in-hilversum-42216-l",
-      "image": "https://www.gearbooker.com/images/listing/00112549.jpg",
-      "prices": {
-        "hourEUR": 160,
-        "firstDayEUR": 800,
-        "extraDayEUR": 560,
-        "weekEUR": 3920
-      },
-      "specs": {
-        "areaM2": null,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "I mix and master your song without losing sight of the music. I specialize in mastering, mixing, and (remote)recording contemporary classical, orchestral, jazz, cinematic, experimental and electronic music."
     },
     {
       "id": "gb-43855",
@@ -4903,20 +4642,165 @@
       "desc": "@crupomusic otto@crupomusic.com Ben jij op zoek naar een volledig akoestisch, inspirerende studio waar je direct op hoog niveau kunt produceren, mixen of opnemen? Deze turn-key studio in Amsterdam is van alle gemakke…"
     },
     {
-      "id": "gb-44069",
-      "slug": "muziekstudio-gb-44069",
-      "name": "Muziekstudio",
-      "type": "muziek",
-      "city": "Antwerpen",
-      "lng": 4.40158,
-      "lat": 51.21878,
-      "url": "https://www.gearbooker.com/en/rent-music-studios-and-sound-studios-muziekstudio-in-antwerpen-44069-l",
-      "image": "https://www.gearbooker.com/images/listing/00117744.jpg",
+      "id": "gb-11421",
+      "slug": "studio-green-key-fond-vert-bruxelles-streaming-live-multicam-gb-11421",
+      "name": "Studio green key fond vert bruxelles streaming live multicam virtual studio captation",
+      "type": "foto",
+      "city": "Saint Gilles",
+      "lng": 4.34579,
+      "lat": 50.82297,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-studio-green-key-fond-vert-bruxelles-streaming-live-multicam-virtual-studio-capt-in-saint-gilles-11421-l",
+      "image": "https://www.gearbooker.com/images/listing/00029687.jpg",
+      "prices": {
+        "hourEUR": 55,
+        "firstDayEUR": 299,
+        "extraDayEUR": 299,
+        "weekEUR": 1465
+      },
+      "specs": {
+        "areaM2": 80,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": true,
+        "greenscreen": true,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "NeoStudio.be est spécifiquement construit et équipé pour une captation vidéo fond vert/green Key de qualité maximale : (possible de louer par demi jour ) Nous pouvons vous rendre service : Streaming live/diffusion e…"
+    },
+    {
+      "id": "gb-33428",
+      "slug": "donkere-kamer-rotterdam-gb-33428",
+      "name": "Donkere Kamer Rotterdam",
+      "type": "foto",
+      "city": "Rotterdam",
+      "lng": 4.47951,
+      "lat": 51.92168,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-donkere-kamer-rotterdam-in-rotterdam-33428-l",
+      "image": "https://www.gearbooker.com/images/listing/00089536.jpg",
+      "prices": {
+        "hourEUR": 22,
+        "firstDayEUR": 110,
+        "extraDayEUR": 77,
+        "weekEUR": 539
+      },
+      "specs": {
+        "areaM2": 10,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "About the Darkroom Studio Rik Versteeg now offers a professional darkroom for rent, perfect for photographers looking to develop and print their own black-and-white film. Equipped with a Durst M605 enlarger with an 75…"
+    },
+    {
+      "id": "gb-14056",
+      "slug": "complete-daglicht-en-fotostudio-60m2-inclusief-interieur-lam-gb-14056",
+      "name": "Complete daglicht en fotostudio 60m2 inclusief interieur, lampen, props en achtergronden",
+      "type": "foto",
+      "city": "Rotterdam",
+      "lng": 4.47479,
+      "lat": 51.92598,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-complete-daglicht-en-fotostudio-60m2-inclusief-interieur-lampen-props-en-achterg-in-rotterdam-14056-l",
+      "image": "https://www.gearbooker.com/images/listing/00075283.jpg",
+      "prices": {
+        "hourEUR": 110,
+        "firstDayEUR": 549,
+        "extraDayEUR": 384.5,
+        "weekEUR": 2690
+      },
+      "specs": {
+        "areaM2": 60,
+        "ceilingM": null,
+        "daylight": true,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": true
+      },
+      "source": "gearbooker",
+      "desc": "Ontdek The Content Studio: dé perfecte plek voor het huren van een daglichtfotostudio, vergaderlocatie, evenementenruimte en workshoplocatie in Rotterdam! Gelegen in het hart van Rotterdam Delfshaven aan de Maas, bied…"
+    },
+    {
+      "id": "gb-14327",
+      "slug": "timechamber-fotostudio-gb-14327",
+      "name": "Timechamber Fotostudio",
+      "type": "foto",
+      "city": "Ranst",
+      "lng": 4.56334,
+      "lat": 51.18863,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-timechamber-fotostudio-in-ranst-14327-l",
+      "image": "https://www.gearbooker.com/images/listing/00037597.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 320,
+        "extraDayEUR": 224,
+        "weekEUR": 1568
+      },
+      "specs": {
+        "areaM2": 55,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Complete fotostudio (55m²) gelegen in Ranst. Soft boxen in begrepen. Verschillende backdrops aanwezig in volgende kleuren: wit, zwart, blauw, groen, bordeaux. Huur Sony A7 camera is optioneel (betalend)"
+    },
+    {
+      "id": "gb-14420",
+      "slug": "timechamber-infinity-wall-gb-14420",
+      "name": "Timechamber Infinity wall",
+      "type": "foto",
+      "city": "Ranst",
+      "lng": 4.56366,
+      "lat": 51.18968,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-timechamber-infinity-wall-in-ranst-14420-l",
+      "image": "https://www.gearbooker.com/images/listing/00038071.jpg",
+      "prices": {
+        "hourEUR": null,
+        "firstDayEUR": 750,
+        "extraDayEUR": 525,
+        "weekEUR": 3675
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": true,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Een studio met een infinity wall geeft de fotograaf of content creator eindeloos veel mogelijkheden in het positioneren van zijn of haar model of product. Door het gevoel van oneindigheid dankzij de hoek die gemaakt i…"
+    },
+    {
+      "id": "gb-27945",
+      "slug": "studio-film-foto-podcast-webinar-instructie-gb-27945",
+      "name": "Studio (film, foto, podcast, webinar, instructie)",
+      "type": "foto",
+      "city": "Veenendaal",
+      "lng": 5.55303,
+      "lat": 52.02588,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-studio-film-foto-podcast-webinar-instructie-in-veenendaal-27945-l",
+      "image": "https://www.gearbooker.com/images/listing/00072772.jpg",
       "prices": {
         "hourEUR": 50,
         "firstDayEUR": 250,
-        "extraDayEUR": 175,
-        "weekEUR": 1225
+        "extraDayEUR": 200,
+        "weekEUR": 1050
       },
       "specs": {
         "areaM2": null,
@@ -4929,23 +4813,23 @@
         "blackout": false
       },
       "source": "gearbooker",
-      "desc": "Op onze locatie in hartje Antwerpen beschikken wij over twee volledig uitgeruste studio’s waar je kan opnemen, repeteren en produceren – met één van onze in-house engineers, of volledig zelfstandig, met of zonder het …"
+      "desc": "Deze studio is geschikt voor uiteenlopende producties zoals interviews, webinars, podcasts, productfoto's en voice-overs. En is uitgerust met professionele apparatuur en faciliteiten zoals verlichting, achtergrondsyst…"
     },
     {
-      "id": "gb-6531",
-      "slug": "industriele-foto-video-studio-gb-6531",
-      "name": "industriële foto / video studio",
+      "id": "gb-15891",
+      "slug": "verhuur-livevideostudio-voor-webinars-ed-regie-techniek-gb-15891",
+      "name": "Verhuur livevideostudio voor webinars ed. + regie & techniek",
       "type": "foto",
-      "city": "Zwijndrecht",
-      "lng": 4.64316,
-      "lat": 51.81748,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-industriele-foto-video-studio-in-zwijndrecht-6531-l",
-      "image": "https://www.gearbooker.com/images/listing/00016642.jpg",
+      "city": "Veldhoven",
+      "lng": 5.40415,
+      "lat": 51.41923,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-verhuur-livevideostudio-voor-webinars-ed-regie-techniek-in-veldhoven-15891-l",
+      "image": "https://www.gearbooker.com/images/listing/00042893.jpg",
       "prices": {
-        "hourEUR": 50,
-        "firstDayEUR": 250,
-        "extraDayEUR": 175,
-        "weekEUR": 1225
+        "hourEUR": null,
+        "firstDayEUR": 336,
+        "extraDayEUR": 235,
+        "weekEUR": 1646.5
       },
       "specs": {
         "areaM2": null,
@@ -4958,26 +4842,142 @@
         "blackout": false
       },
       "source": "gearbooker",
-      "desc": "Van fotoshoots tot interviews niks is te gek in onze compacte sfeervolle studio, een ruimte waar gewerkt kan worden maar waar je ook tot rust komt. Naast de aangegeven faciliteiten is er ook beschikking tot : - 43 i…"
+      "desc": "Verhuur livevideostudio webinars ed. + regie met mogelijkheid tot uitzenden naar media (YouTube/Facebook/Zoom/Teams) of eigen server. 3 FULL-HD Canon Camera's, microfoons en voldoende lichtbakken. Meer info op: www.at…"
     },
     {
-      "id": "gb-8370",
-      "slug": "unieke-fotolocatie-in-oude-fabriek-gb-8370",
-      "name": "Unieke fotolocatie in oude fabriek",
+      "id": "gb-17843",
+      "slug": "daglichtstudio-friesland-gb-17843",
+      "name": "Daglichtstudio Friesland",
       "type": "foto",
-      "city": "Wergea",
-      "lng": 5.84499,
-      "lat": 53.15245,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-unieke-fotolocatie-in-oude-fabriek-in-wergea-8370-l",
-      "image": "https://www.gearbooker.com/images/listing/00021670.jpg",
+      "city": "Sloten",
+      "lng": 4.79847,
+      "lat": 52.3415,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-daglichtstudio-friesland-in-sloten-17843-l",
+      "image": "https://www.gearbooker.com/images/listing/00049615.jpg",
       "prices": {
-        "hourEUR": 50,
+        "hourEUR": 78.5,
+        "firstDayEUR": 393.5,
+        "extraDayEUR": 275.5,
+        "weekEUR": 1928
+      },
+      "specs": {
+        "areaM2": 50,
+        "ceilingM": null,
+        "daylight": true,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Studio D-light is dé daglichtstudio van Friesland, deze studio van 50m² bevindt zich op de eerste verdieping van de oude stadsherberg van het Elfstedenstadje Sloten. De studio is sfeervol ingericht en heeft rondom ram…"
+    },
+    {
+      "id": "gb-16050",
+      "slug": "film-foto-studio-gb-16050",
+      "name": "Film Foto Studio",
+      "type": "foto",
+      "city": "Rotterdam",
+      "lng": 4.48008,
+      "lat": 51.92158,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-film-foto-studio-in-rotterdam-16050-l",
+      "image": "https://www.gearbooker.com/images/listing/00043260.jpg",
+      "prices": {
+        "hourEUR": null,
         "firstDayEUR": 250,
-        "extraDayEUR": 175,
+        "extraDayEUR": 225,
         "weekEUR": 1225
       },
       "specs": {
-        "areaM2": 170,
+        "areaM2": 100,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "English: Welcome to our FilmFoto Studio located in Rotterdam, in the district of Delfshaven. We offer a large 100 square meter space that is well-suited for a wide range of film and photography projects. Additionally,…"
+    },
+    {
+      "id": "gb-35984",
+      "slug": "foto-video-studio-maassluis-gb-35984",
+      "name": "Foto-/Video Studio Maassluis",
+      "type": "foto",
+      "city": "Maassluis",
+      "lng": 4.24733,
+      "lat": 51.92457,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-foto-video-studio-maassluis-in-maassluis-35984-l",
+      "image": "https://www.gearbooker.com/images/listing/00095436.jpg",
+      "prices": {
+        "hourEUR": 55,
+        "firstDayEUR": 275,
+        "extraDayEUR": 192.5,
+        "weekEUR": 1347.5
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": null,
+        "daylight": true,
+        "cyclorama": false,
+        "greenscreen": true,
+        "parking": true,
+        "powerHeavy": false,
+        "blackout": true
+      },
+      "source": "gearbooker",
+      "desc": "Ben jij op zoek naar een compacte, veelzijdige studio voor jouw volgende shoot? Onze studio in Maassluis is ideaal voor het maken van portretfoto’s, productshots, explainer video’s, social content, gifjes, stop-motion…"
+    },
+    {
+      "id": "gb-30428",
+      "slug": "ruime-foto-video-studio-65m2-in-raalte-overijssel-gb-30428",
+      "name": "Ruime foto/video studio (65m2) in Raalte, Overijssel",
+      "type": "foto",
+      "city": "Raalte",
+      "lng": 6.30563,
+      "lat": 52.38741,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-ruime-fotovideo-studio-65m2-in-raalte-overijssel-in-raalte-30428-l",
+      "image": "https://www.gearbooker.com/images/listing/00089288.jpg",
+      "prices": {
+        "hourEUR": 63,
+        "firstDayEUR": 315,
+        "extraDayEUR": 220.5,
+        "weekEUR": 1543.5
+      },
+      "specs": {
+        "areaM2": 65,
+        "ceilingM": null,
+        "daylight": false,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Ontdek onze foto/videostudio, de perfecte locatie voor jouw creatieve projecten. Onze ruime studio is voorzien van alle basisbenodigdheden, waardoor je alle vrijheid hebt om je visie tot leven te brengen. Let op! Alle…"
+    },
+    {
+      "id": "gb-31132",
+      "slug": "studio-illume-de-daglichtstudio-voor-al-jouw-creatieve-proje-gb-31132",
+      "name": "Studio Illume, dé daglichtstudio voor al jouw creatieve projecten, centraal in Nederland!",
+      "type": "foto",
+      "city": "Zeewolde",
+      "lng": 5.45796,
+      "lat": 52.34656,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-studio-illume-de-daglichtstudio-voor-al-jouw-creatieve-projecten-centraal-in-ned-in-zeewolde-31132-l",
+      "image": "https://www.gearbooker.com/images/listing/00090836.jpg",
+      "prices": {
+        "hourEUR": 123,
+        "firstDayEUR": 615,
+        "extraDayEUR": 430.5,
+        "weekEUR": 3085
+      },
+      "specs": {
+        "areaM2": 150,
         "ceilingM": null,
         "daylight": true,
         "cyclorama": false,
@@ -4987,23 +4987,52 @@
         "blackout": false
       },
       "source": "gearbooker",
-      "desc": "In De Fabriek hebben we verschillende ruimtes die huiselijk en sfeervol zijn ingericht en ideaal zijn als fotolocatie voor fotoshoots. Onze living van 170m2 is eigentijds ingericht en zeer geschikt voor lifestyle foto…"
+      "desc": "Studio Illume, dé daglichtstudio / fotostudio te huur voor al jouw creatieve projecten! Pas alles aan naar wens; verplaats meubels en maak je eigen setting! Laat alles na afloop lekker staan, bij ons hoef je niet op t…"
     },
     {
-      "id": "gb-9826",
-      "slug": "motion-capture-suite-motion-capture-studio-gb-9826",
-      "name": "Motion capture suite / motion capture studio",
+      "id": "gb-31187",
+      "slug": "unieke-daglichtstudio-voor-fotografie-gb-31187",
+      "name": "Unieke Daglichtstudio voor Fotografie",
       "type": "foto",
-      "city": "Rotterdam",
-      "lng": 4.48207,
-      "lat": 51.92612,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-motion-capture-suite-motion-capture-studio-in-rotterdam-9826-l",
-      "image": "https://www.gearbooker.com/images/listing/00025195.jpg",
+      "city": "Veenendaal",
+      "lng": 5.55306,
+      "lat": 52.02626,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-unieke-daglichtstudio-voor-fotografie-in-veenendaal-31187-l",
+      "image": "https://www.gearbooker.com/images/listing/00082820.jpg",
       "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 150,
-        "extraDayEUR": 105,
-        "weekEUR": 735
+        "hourEUR": 175,
+        "firstDayEUR": 950,
+        "extraDayEUR": 665,
+        "weekEUR": 3500
+      },
+      "specs": {
+        "areaM2": null,
+        "ceilingM": 4.6,
+        "daylight": true,
+        "cyclorama": false,
+        "greenscreen": false,
+        "parking": false,
+        "powerHeavy": false,
+        "blackout": false
+      },
+      "source": "gearbooker",
+      "desc": "Te Huur: Unieke Daglichtstudio voor Fotografie Bent u op zoek naar de perfecte locatie voor uw fotografieprojecten? Wij bieden een prachtig industrieel pand te huur aan dat ideaal is als daglichtstudio. Zeer centraal …"
+    },
+    {
+      "id": "gb-31825",
+      "slug": "film-fotostudio-in-de-buurt-van-rotterdam-gb-31825",
+      "name": "Film/Fotostudio in de buurt van Rotterdam",
+      "type": "foto",
+      "city": "Waddinxveen",
+      "lng": 4.65261,
+      "lat": 52.04347,
+      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-filmfotostudio-in-de-buurt-van-rotterdam-in-waddinxveen-31825-l",
+      "image": "https://www.gearbooker.com/images/listing/00085033.jpg",
+      "prices": {
+        "hourEUR": 120,
+        "firstDayEUR": 600,
+        "extraDayEUR": 500,
+        "weekEUR": 3600
       },
       "specs": {
         "areaM2": null,
@@ -5016,36 +5045,7 @@
         "blackout": false
       },
       "source": "gearbooker",
-      "desc": "Een volwaardige motion capture studio, waardoor het voor onze klanten een stuk eenvoudiger en goedkoper wordt om 3D karakters te laten bewegen. Het is eveneens mogelijk om voor een zeer aantrekkelijk tarief het MoCap-…"
-    },
-    {
-      "id": "gb-10063",
-      "slug": "foto-film-studio-gb-10063",
-      "name": "Foto- Film Studio",
-      "type": "foto",
-      "city": "Assendelft",
-      "lng": 4.75346,
-      "lat": 52.48792,
-      "url": "https://www.gearbooker.com/en/rent-photo-studios-and-film-studios-foto--film-studio-in-assendelft-10063-l",
-      "image": "https://www.gearbooker.com/images/listing/00025844.jpg",
-      "prices": {
-        "hourEUR": null,
-        "firstDayEUR": 300,
-        "extraDayEUR": 250,
-        "weekEUR": 1470
-      },
-      "specs": {
-        "areaM2": 60,
-        "ceilingM": null,
-        "daylight": false,
-        "cyclorama": false,
-        "greenscreen": false,
-        "parking": false,
-        "powerHeavy": false,
-        "blackout": false
-      },
-      "source": "gearbooker",
-      "desc": "Onze fotostudio is nu voor iedereen beschikbaar! Boek via Gearbooker of onze website. Onze studio bestaat uit een ruimte van 60m2 waar de koffie, thee en water gratis is. De kleedruimte en visagie kan worden afgescher…"
+      "desc": "“From dreams to screens” \"The Court\" is niet zomaar een foto/filmstudio – het is een plek gebouwd door professionals, voor professionals. Met een uniek basketbalthema staat onze studio symbool voor teamwork, precisie …"
     },
     {
       "id": "dr-xyz-studio-a",
